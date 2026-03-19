@@ -71,18 +71,18 @@ public class DataUtilitiesTest {
 
     /**
      * ECT Test Case 2 | Partition D2 - data - null | Partition C2 - column -
-     * (column < 0) | → InvalidParameterException
+     * (column < 0) | → IllegalArgumentException
      */
     @Test
     public void test_calculateColumnTotal_ect_2() {
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.calculateColumnTotal(null, -1);
     }
 
     /**
      * ECT Test Case 3 | Partition D3 - data - with one or more values in the
      * column as null | Partition C3 - column - (column ≥ columnCount) | →
-     * InvalidParameterException
+     * IllegalArgumentException
      */
     @Test
     public void test_calculateColumnTotal_ect_3() {
@@ -104,7 +104,7 @@ public class DataUtilitiesTest {
             }
         });
 
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.calculateColumnTotal(values, 7);
     }
 
@@ -372,18 +372,18 @@ public class DataUtilitiesTest {
 
     /**
      * ECT Test Case 2 | Partition D2 - data - null | Partition C2 - row - (row
-     * < 0) | → InvalidParameterException
+     * < 0) | → IllegalArgumentException
      */
     @Test
     public void test_calculateRowTotal_ect_2() {
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.calculateRowTotal(null, -1);
     }
 
     /**
      * ECT Test Case 3 | Partition D3 - data - with one or more values in the
      * row as null | Partition C3 - row - (row ≥ rowCount) | →
-     * InvalidParameterException
+     * IllegalArgumentException
      */
     @Test
     public void test_calculateRowTotal_ect_3() {
@@ -400,7 +400,7 @@ public class DataUtilitiesTest {
                 will(throwException(new IndexOutOfBoundsException()));
             }
         });
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.calculateRowTotal(values, 7);
     }
 
@@ -686,11 +686,11 @@ public class DataUtilitiesTest {
     }
 
     /**
-     * ECT Test Case 3 - Partition D3 - null → InvalidParameterException
+     * ECT Test Case 3 - Partition D3 - null → IllegalArgumentException
      */
     @Test
     public void test_createNumberArray_ect_3() {
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.createNumberArray(null);
     }
 
@@ -801,12 +801,12 @@ public class DataUtilitiesTest {
 
     /**
      * ECT Test Case 2 - Partition D2 - 2D array with one or more null values in
-     * the outer array → InvalidParameterException
+     * the outer array → IllegalArgumentException
      */
     @Test
     public void test_createNumberArray2D_ect_2() {
         final double[][] data = {{-122.40, 0, 0.3, 23.12, 123.40}, {-100_012.31, -250.1, 0.3, 500.0}, null};
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.createNumberArray2D(data);
     }
 
@@ -837,11 +837,11 @@ public class DataUtilitiesTest {
     }
 
     /**
-     * ECT Test Case 5 - Partition D5 - Null → InvalidParameterException
+     * ECT Test Case 5 - Partition D5 - Null → IllegalArgumentException
      */
     @Test
     public void test_createNumberArray2D_ect_5() {
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.createNumberArray2D(null);
     }
 
@@ -1196,7 +1196,7 @@ public class DataUtilitiesTest {
 
     /**
      * ECT Test Case 4 - Partition D4 - Dataset with all values as zero →
-     * InvalidParameterException
+     * IllegalArgumentException
      */
     @Test
     public void test_getCumulativePercentages_ect_4() {
@@ -1204,30 +1204,30 @@ public class DataUtilitiesTest {
         Number[] values = new Number[]{0.0, 0.0, 0.0};
         KeyedValues data = mockKeyedValues(values);
 
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.getCumulativePercentages(data);
 
     }
 
     /**
-     * ECT Test Case 5 - Partition D5 - Null → InvalidParameterException
+     * ECT Test Case 5 - Partition D5 - Null → IllegalArgumentException
      */
     @Test
     public void test_getCumulativePercentages_ect_5() {
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.getCumulativePercentages(null);
     }
 
     /**
      * ECT Test Case 6 - Partition D6 - One or more values in the dataset are
-     * null → InvalidParameterException
+     * null → IllegalArgumentException
      */
     @Test
     public void test_getCumulativePercentages_ect_6() {
         Number[] values = new Number[]{5.0, 9.0, null, 2.0};
         KeyedValues data = mockKeyedValues(values);
 
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.getCumulativePercentages(data);
     }
 
@@ -1304,7 +1304,7 @@ public class DataUtilitiesTest {
 
     /**
      * BVT Test Case 5 - Sum of all values - 0 - sum_LB, Number of keys - 500 -
-     * keys_NOM
+     * keys_NOM -> IllegalArgumentException due to zero total
      */
     @Test
     public void test_getCumulativePercentages_bvt_5() {
@@ -1314,7 +1314,7 @@ public class DataUtilitiesTest {
 
         KeyedValues data = mockKeyedValues(values);
 
-        thrown.expect(InvalidParameterException.class);
+        thrown.expect(IllegalArgumentException.class);
         DataUtilities.getCumulativePercentages(data);
 
     }

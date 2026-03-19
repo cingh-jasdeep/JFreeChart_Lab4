@@ -125,10 +125,15 @@ public abstract class DataUtilities {
         double total = 0.0;
         int rowCount = data.getRowCount();
         for (int r = 0; r < rowCount; r++) {
-            Number n = data.getValue(r, column);
-            if (n != null) {
-                total += n.doubleValue();
-            }
+        	try {
+        		Number n = data.getValue(r, column);
+        		if (n != null) {
+                    total += n.doubleValue();
+                }
+        	} catch (IndexOutOfBoundsException e) {
+        		throw new IllegalArgumentException("Column '" + column + "' out of bounds.");
+        	}
+            
         }
         return total;
     }
@@ -176,10 +181,14 @@ public abstract class DataUtilities {
         double total = 0.0;
         int columnCount = data.getColumnCount();
         for (int c = 0; c < columnCount; c++) {
+        	try {
             Number n = data.getValue(row, c);
             if (n != null) {
                 total += n.doubleValue();
             }
+        	} catch (IndexOutOfBoundsException e) {
+        		throw new IllegalArgumentException("Row '" + row + "' out of bounds.");
+        	}
         }
         return total;
     }
@@ -261,12 +270,20 @@ public abstract class DataUtilities {
     public static KeyedValues getCumulativePercentages(KeyedValues data) {
         ParamChecks.nullNotPermitted(data, "data");
         DefaultKeyedValues result = new DefaultKeyedValues();
+        if(data.getItemCount() == 0) {
+        	return result;
+        }
         double total = 0.0;
         for (int i = 0; i < data.getItemCount(); i++) {
             Number v = data.getValue(i);
             if (v != null) {
                 total = total + v.doubleValue();
+            } else {
+            	throw new IllegalArgumentException("Null value at index '"+ i +"'.");
             }
+        }
+        if(Double.compare(total, 0.0) == 0) {
+        	throw new IllegalArgumentException("Zero total.");
         }
         double runningTotal = 0.0;
         for (int i = 0; i < data.getItemCount(); i++) {
