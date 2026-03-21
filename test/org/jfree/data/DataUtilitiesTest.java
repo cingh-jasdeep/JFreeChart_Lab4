@@ -1,18 +1,14 @@
 package org.jfree.data;
 
-import java.security.InvalidParameterException;
-import java.util.Arrays;
-
-import org.jfree.data.DataUtilities;
-import org.jfree.data.KeyedValues;
-import org.jfree.data.UnknownKeyException;
-import org.jfree.data.Values2D;
-import org.jmock.Expectations;
-import org.jmock.Mockery;
-import org.jmock.integration.junit4.JUnit4Mockery;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+
+import java.util.Arrays;
+
+import org.jmock.Expectations;
+import org.jmock.Mockery;
+import org.jmock.integration.junit4.JUnit4Mockery;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

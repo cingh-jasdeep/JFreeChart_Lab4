@@ -131,7 +131,7 @@ public abstract class DataUtilities {
                     total += n.doubleValue();
                 }
         	} catch (IndexOutOfBoundsException e) {
-        		throw new IllegalArgumentException("Column '" + column + "' out of bounds.");
+        		throw new IllegalArgumentException("Column out of bounds.");
         	}
             
         }
@@ -187,7 +187,7 @@ public abstract class DataUtilities {
                 total += n.doubleValue();
             }
         	} catch (IndexOutOfBoundsException e) {
-        		throw new IllegalArgumentException("Row '" + row + "' out of bounds.");
+        		throw new IllegalArgumentException("Row out of bounds.");
         	}
         }
         return total;
@@ -279,18 +279,16 @@ public abstract class DataUtilities {
             if (v != null) {
                 total = total + v.doubleValue();
             } else {
-            	throw new IllegalArgumentException("Null value at index '"+ i +"'.");
+            	throw new IllegalArgumentException("Detected null value in the data provided.");
             }
         }
         if(Double.compare(total, 0.0) == 0) {
-        	throw new IllegalArgumentException("Zero total.");
+        	throw new IllegalArgumentException("Sum of values in the data provided is zero.");
         }
         double runningTotal = 0.0;
         for (int i = 0; i < data.getItemCount(); i++) {
             Number v = data.getValue(i);
-            if (v != null) {
-                runningTotal = runningTotal + v.doubleValue();
-            }
+            runningTotal = runningTotal + v.doubleValue();
             result.addValue(data.getKey(i), new Double(runningTotal / total));
         }
         return result;
