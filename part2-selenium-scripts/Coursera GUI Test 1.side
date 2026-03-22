@@ -1,0 +1,129 @@
+{
+  "id": "8ac72380-3044-4198-8f3b-9cbfbbd0c46a",
+  "version": "2.0",
+  "name": "Coursera GUI Test 1",
+  "url": "https://www.coursera.org/",
+  "tests": [{
+    "id": "f0b834ae-7bf8-47ed-8363-075025d39e01",
+    "name": "TC1: Course Search 1",
+    "commands": [{
+      "id": "dbeebb20-d462-4174-9520-f641077310a2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94efd294-4ea8-4bbc-9ade-c1ac39402e5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x949",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48a29e7a-f9c3-4bc2-9c80-63b8767b9502",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-autocomplete-input",
+      "targets": [
+        ["id=search-autocomplete-input", "id"],
+        ["name=query", "name"],
+        ["css=#search-autocomplete-input", "css:finder"],
+        ["xpath=//input[@id='search-autocomplete-input']", "xpath:attributes"],
+        ["xpath=//div[@id='rendered-content']/div/span/span/div/nav/div[2]/div/div/div/div[2]/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "engineering"
+    }, {
+      "id": "83ef3dc7-94b7-4697-81ca-c7e6f6cbae7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cds-iconButton-small",
+      "targets": [
+        ["css=.cds-iconButton-small", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='rendered-content']/div/span/span/div/nav/div[2]/div/div/div/div[2]/div/div/form/div/div/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e24d131c-6fe6-4380-8647-d2068b77b374",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span",
+      "targets": [
+        ["css=.css-zh12ej span", "css:finder"],
+        ["xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span", "xpath:idRelative"],
+        ["xpath=//h2/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Results for \"engineering\"')]", "xpath:innerText"]
+      ],
+      "value": "Results for \"engineering\""
+    }]
+  }, {
+    "id": "a0449181-5965-4e27-be14-eee9ddcaeaf8",
+    "name": "TC2: Course Search 2",
+    "commands": [{
+      "id": "a595ac1c-e3a9-4153-b9b9-d3b89fd3a9ea",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e66c56ea-d801-4f63-a5e9-21040d80bfd6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x949",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6731f621-033d-4817-bebe-643d6052727d",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-autocomplete-input",
+      "targets": [
+        ["id=search-autocomplete-input", "id"],
+        ["name=query", "name"],
+        ["css=#search-autocomplete-input", "css:finder"],
+        ["xpath=//input[@id='search-autocomplete-input']", "xpath:attributes"],
+        ["xpath=//div[@id='rendered-content']/div/span/span/div/nav/div[2]/div/div/div/div[2]/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "geography"
+    }, {
+      "id": "5259a5e2-1b35-4b30-b962-4b0505b312e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cds-iconButton-small",
+      "targets": [
+        ["css=.cds-iconButton-small", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='rendered-content']/div/span/span/div/nav/div[2]/div/div/div/div[2]/div/div/form/div/div/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbf111c8-8662-48cd-879c-aff6281257c2",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span",
+      "targets": [
+        ["css=.css-zh12ej span", "css:finder"],
+        ["xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span", "xpath:idRelative"],
+        ["xpath=//h2/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Results for \"engineering\"')]", "xpath:innerText"]
+      ],
+      "value": "Results for \"geography\""
+    }]
+  }],
+  "suites": [{
+    "id": "c863094b-63be-49b9-9fc2-bd43daf1af21",
+    "name": "Course Search",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f0b834ae-7bf8-47ed-8363-075025d39e01", "a0449181-5965-4e27-be14-eee9ddcaeaf8"]
+  }],
+  "urls": ["https://www.coursera.org/"],
+  "plugins": []
+}
