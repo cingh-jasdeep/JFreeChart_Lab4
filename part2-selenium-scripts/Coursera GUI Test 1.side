@@ -183,6 +183,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "89e2de05-3f00-4978-951c-682be0050c25",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=[data-testid='product-card-cds'] a",
+      "targets": [],
+      "value": "10000"
+    }, {
       "id": "7525e2b4-dc83-4fa1-bdbd-d305903d6c87",
       "comment": "",
       "command": "click",
