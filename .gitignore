@@ -1,4 +1,4 @@
-/bin/
-/bin_test/
+bin
+bin_test
 .history
 .DS_Store
