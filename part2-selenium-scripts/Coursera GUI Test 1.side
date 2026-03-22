@@ -80,6 +80,184 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "07e165d6-b6bf-47bc-ad47-68ec2d890334",
+    "name": "TC2: Language Selection with array of languages",
+    "commands": [{
+      "id": "ad3c8999-c7dc-404b-b631-5d6521be926f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [{name: \"French\", localName: \"Français\"}, {name: \"Hindi\", localName: \"हिन्दी\"}]",
+      "targets": [],
+      "value": "testLanguages"
+    }, {
+      "id": "7ee05e41-0d72-4276-92d1-0e31bd75bb21",
+      "comment": "",
+      "command": "forEach",
+      "target": "testLanguages",
+      "targets": [],
+      "value": "currLanguage"
+    }, {
+      "id": "6aa52efb-4953-41f4-adb9-770ed14df29f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${currLanguage}.name",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "4d4e4f5a-bb7c-4f1b-a2f2-060cf75adf0b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${currLanguage}.localName",
+      "targets": [],
+      "value": "localName"
+    }, {
+      "id": "95e6a257-19d3-4471-925e-017cc2a98860",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b06f1ce-4b80-4748-a098-d7a09a130380",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x949",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b453ed29-9663-4c8f-9423-86eddffeb002",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-autocomplete-input",
+      "targets": [
+        ["id=search-autocomplete-input", "id"],
+        ["name=query", "name"],
+        ["css=#search-autocomplete-input", "css:finder"],
+        ["xpath=//input[@id='search-autocomplete-input']", "xpath:attributes"],
+        ["xpath=//div[@id='rendered-content']/div/span/span/div/nav/div[2]/div/div/div/div[2]/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "engineering"
+    }, {
+      "id": "536db32f-cd78-49a7-9bc5-257b169db49d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cds-iconButton-small",
+      "targets": [
+        ["css=.cds-iconButton-small", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='rendered-content']/div/span/span/div/nav/div[2]/div/div/div/div[2]/div/div/form/div/div/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "475038f8-ce33-40f2-a2cf-1584ecd7d3d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[data-testid='filter-dropdown-language']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de57903b-bc0e-43d3-aa16-2be2562bc781",
+      "comment": "",
+      "command": "click",
+      "target": "css=div[data-testid='language:${name}-false'] > label",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a73b0b4e-850f-4770-af8b-17c1dbd2b088",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cds-popoverDropdown-default > div:nth-child(1)",
+      "targets": [
+        ["css=.cds-207 > div:nth-child(1)", "css:finder"],
+        ["xpath=//body/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3196b94a-3c98-46d2-a515-4abdeae3fad7",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "parentWindow",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7525e2b4-dc83-4fa1-bdbd-d305903d6c87",
+      "comment": "",
+      "command": "click",
+      "target": "css=[data-testid='product-card-cds'] a",
+      "targets": [
+        ["id=cds-react-aria1807577258-:r6b:-product-card-title", "id"],
+        ["linkText=Introduction to Engineering Mechanics", "linkText"],
+        ["css=#cds-react-aria1807577258-\\3Ar6b\\3A-product-card-title", "css:finder"],
+        ["xpath=//a[@id='cds-react-aria1807577258-:r6b:-product-card-title']", "xpath:attributes"],
+        ["xpath=//div[@id='searchResults']/div/div/ul/li/div/div/div/div/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/learn/engineering-mechanics-statics')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Introduction to Engineering Mechanics')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "courseWindow",
+      "windowTimeout": 2000
+    }, {
+      "id": "223fe76b-7338-4b61-8392-f11c0a05140b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${courseWindow}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd966762-fd17-4fe2-86a8-628496451d47",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(text(),'languages available')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3c636e9-7140-412e-86f5-83d838bb22a0",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//p[contains(text(), '${localName}')]",
+      "targets": [],
+      "value": "supportedLanguages"
+    }, {
+      "id": "5aafc026-1ce8-4e76-a010-3429b0830826",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${supportedLanguages}.includes(${localName})",
+      "targets": [],
+      "value": "supportsSelectedLanguage"
+    }, {
+      "id": "45a3cbad-9b60-422d-baee-41adeae7caf9",
+      "comment": "",
+      "command": "assert",
+      "target": "supportsSelectedLanguage",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "df7e682c-af72-4f8c-9c34-75dc006cf88f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e640c471-6e04-40c1-8073-ea4edfaf5aef",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${parentWindow}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5d34329-4282-4be2-a4ba-05e338533a1f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "c863094b-63be-49b9-9fc2-bd43daf1af21",
@@ -88,6 +266,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["d104c4cf-b919-4715-a3df-a98140754c22"]
+  }, {
+    "id": "ef84e910-8e93-41b2-aa8f-511f9a2c2f4b",
+    "name": "Course Language Selection",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["07e165d6-b6bf-47bc-ad47-68ec2d890334"]
   }],
   "urls": ["https://www.coursera.org/"],
   "plugins": []
