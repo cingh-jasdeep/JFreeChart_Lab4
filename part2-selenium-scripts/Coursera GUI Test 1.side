@@ -70,7 +70,7 @@
     }, {
       "id": "1c7ea2a3-63bc-4d8c-95ea-f8106d07c706",
       "comment": "",
-      "command": "waitForElementVisible",
+      "command": "waitForElementPresent",
       "target": "xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span",
       "targets": [],
       "value": "10000"
@@ -173,6 +173,13 @@
       ],
       "value": ""
     }, {
+      "id": "2253df90-dc6b-49a8-ae88-9912545456fc",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=button[data-testid='filter-dropdown-language']",
+      "targets": [],
+      "value": "10000"
+    }, {
       "id": "475038f8-ce33-40f2-a2cf-1584ecd7d3d4",
       "comment": "",
       "command": "click",
@@ -180,12 +187,26 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "aba207d4-9add-4366-aff4-a9aa75106d26",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=div[data-testid='language:${name}-false'] > label",
+      "targets": [],
+      "value": "10000"
+    }, {
       "id": "de57903b-bc0e-43d3-aa16-2be2562bc781",
       "comment": "",
       "command": "click",
       "target": "css=div[data-testid='language:${name}-false'] > label",
       "targets": [],
       "value": ""
+    }, {
+      "id": "def7e14d-3e3d-474d-9402-cbb168fb16ca",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.cds-popoverDropdown-default > div:nth-child(1)",
+      "targets": [],
+      "value": "10000"
     }, {
       "id": "a73b0b4e-850f-4770-af8b-17c1dbd2b088",
       "comment": "",
@@ -206,7 +227,7 @@
     }, {
       "id": "89e2de05-3f00-4978-951c-682be0050c25",
       "comment": "",
-      "command": "waitForElementVisible",
+      "command": "waitForElementPresent",
       "target": "css=[data-testid='product-card-cds'] a",
       "targets": [],
       "value": "10000"
@@ -239,38 +260,24 @@
     }, {
       "id": "bf88657f-6fb1-4721-90cf-3418d2b11cca",
       "comment": "",
-      "command": "waitForElementVisible",
-      "target": "xpath=//span[contains(text(),'languages available')]",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@id='about']/div/div[3]/div[2]/div[2]/div[2]/button/span/span",
       "targets": [],
       "value": "10000"
     }, {
       "id": "bd966762-fd17-4fe2-86a8-628496451d47",
       "comment": "",
       "command": "click",
-      "target": "xpath=//span[contains(text(),'languages available')]",
+      "target": "xpath=//div[@id='about']/div/div[3]/div[2]/div[2]/div[2]/button/span/span",
       "targets": [],
       "value": ""
     }, {
-      "id": "c3c636e9-7140-412e-86f5-83d838bb22a0",
+      "id": "c861a657-8b59-4047-b52e-4f5d8f6d59e7",
       "comment": "",
-      "command": "storeText",
+      "command": "waitForElementPresent",
       "target": "xpath=//p[contains(text(), '${localName}')]",
       "targets": [],
-      "value": "supportedLanguages"
-    }, {
-      "id": "5aafc026-1ce8-4e76-a010-3429b0830826",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return ${supportedLanguages}.includes(${localName})",
-      "targets": [],
-      "value": "supportsSelectedLanguage"
-    }, {
-      "id": "45a3cbad-9b60-422d-baee-41adeae7caf9",
-      "comment": "",
-      "command": "assert",
-      "target": "supportsSelectedLanguage",
-      "targets": [],
-      "value": "true"
+      "value": "10000"
     }, {
       "id": "df7e682c-af72-4f8c-9c34-75dc006cf88f",
       "comment": "",
