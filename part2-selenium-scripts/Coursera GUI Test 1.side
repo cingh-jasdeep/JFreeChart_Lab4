@@ -68,6 +68,13 @@
       ],
       "value": ""
     }, {
+      "id": "1c7ea2a3-63bc-4d8c-95ea-f8106d07c706",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span",
+      "targets": [],
+      "value": "10000"
+    }, {
       "id": "f8331022-035d-4a7d-a5e7-8561c97f79a8",
       "comment": "",
       "command": "assertText",
@@ -229,6 +236,13 @@
       "target": "handle=${courseWindow}",
       "targets": [],
       "value": ""
+    }, {
+      "id": "bf88657f-6fb1-4721-90cf-3418d2b11cca",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//span[contains(text(),'languages available')]",
+      "targets": [],
+      "value": "10000"
     }, {
       "id": "bd966762-fd17-4fe2-86a8-628496451d47",
       "comment": "",
