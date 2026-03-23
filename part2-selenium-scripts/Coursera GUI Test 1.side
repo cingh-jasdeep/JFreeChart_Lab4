@@ -10,7 +10,7 @@
       "id": "35fe3861-e2c1-4599-a51e-01ccfa4d3acd",
       "comment": "",
       "command": "executeScript",
-      "target": "return [\"engineering\", \"geography\"]",
+      "target": "return [\"engineering\", \"geography\", \"ai\"]",
       "targets": [],
       "value": "searchTerms"
     }, {
@@ -20,6 +20,13 @@
       "target": "searchTerms",
       "targets": [],
       "value": "currSearchTerm"
+    }, {
+      "id": "8668f6a8-bd5c-46a7-8be2-106c95475be0",
+      "comment": "",
+      "command": "echo",
+      "target": "Testing current search term: ${currSearchTerm}",
+      "targets": [],
+      "value": ""
     }, {
       "id": "4598441b-b967-4db3-b8eb-d6becccd86ad",
       "comment": "",
@@ -87,7 +94,7 @@
       "id": "ad3c8999-c7dc-404b-b631-5d6521be926f",
       "comment": "",
       "command": "executeScript",
-      "target": "return [{name: \"French\", localName: \"Français\"}, {name: \"Hindi\", localName: \"हिन्दी\"}]",
+      "target": "return [{name: \"French\", localName: \"Français\"}, {name: \"Spanish\", localName: \"Español\"}, {name: \"Hindi\", localName: \"हिन्दी\"}]",
       "targets": [],
       "value": "testLanguages"
     }, {
@@ -111,6 +118,13 @@
       "target": "return ${currLanguage}.localName",
       "targets": [],
       "value": "localName"
+    }, {
+      "id": "7c8ebfb2-09e1-4ef2-82e4-d02eb9bfc1d8",
+      "comment": "",
+      "command": "echo",
+      "target": "Testing current language: ${name} - ${localName}",
+      "targets": [],
+      "value": ""
     }, {
       "id": "95e6a257-19d3-4471-925e-017cc2a98860",
       "comment": "",
@@ -138,7 +152,7 @@
         ["xpath=//div[@id='rendered-content']/div/span/span/div/nav/div[2]/div/div/div/div[2]/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "engineering"
+      "value": "ai"
     }, {
       "id": "536db32f-cd78-49a7-9bc5-257b169db49d",
       "comment": "",
