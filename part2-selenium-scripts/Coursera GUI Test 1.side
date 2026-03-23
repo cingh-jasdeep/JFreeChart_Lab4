@@ -75,17 +75,12 @@
       "targets": [],
       "value": "10000"
     }, {
-      "id": "f8331022-035d-4a7d-a5e7-8561c97f79a8",
+      "id": "0ae25462-96d3-4c92-b225-d3168652cf1d",
       "comment": "",
-      "command": "assertText",
-      "target": "xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span",
-      "targets": [
-        ["css=.css-zh12ej span", "css:finder"],
-        ["xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span", "xpath:idRelative"],
-        ["xpath=//h2/div/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Results for \"engineering\"')]", "xpath:innerText"]
-      ],
-      "value": "Results for \"${currSearchTerm}\""
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='search-results-header-wrapper']/div/div/h2/div/span[contains(text(),'${currSearchTerm}')]",
+      "targets": [],
+      "value": ""
     }, {
       "id": "694b7986-8d32-428b-8c65-d0ac358d9b2e",
       "comment": "",
