@@ -42,6 +42,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "c91827fd-8d0b-4456-8ecf-c56b0bf887d1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=search-autocomplete-input",
+      "targets": [],
+      "value": "10000"
+    }, {
       "id": "963f1d0f-55f0-4120-ae72-7a21b8a767bb",
       "comment": "",
       "command": "type",
@@ -55,6 +62,13 @@
         ["xpath=//input", "xpath:position"]
       ],
       "value": "${currSearchTerm}"
+    }, {
+      "id": "68f46ed3-b1c6-459a-b8f8-4b387ad61b46",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.cds-iconButton-small",
+      "targets": [],
+      "value": "10000"
     }, {
       "id": "704b0299-d2a4-43e4-9169-b29883abbdfe",
       "comment": "",
