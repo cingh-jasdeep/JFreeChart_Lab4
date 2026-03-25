@@ -1,0 +1,567 @@
+{
+  "id": "21ec05bd-379f-4640-bf88-b9110e64f5aa",
+  "version": "2.0",
+  "name": "Amazon GUI Test",
+  "url": "https://www.amazon.ca/",
+  "tests": [{
+    "id": "51ca288a-f4f8-49aa-8dbe-dc84b91c267e",
+    "name": "TC4 : search product ( COOKER)",
+    "commands": [{
+      "id": "f0275174-3855-402d-a2e5-bbfa62aa1558",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f4f9489-eaf2-45a8-85a6-4c68ad43c174",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecf9de4d-a27e-4437-9cf3-1ad1d5b7432f",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b2a6221-9d3a-407e-9277-e35e84e633ba",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68a1825d-ec1c-4fa1-b87a-45007f976cc5",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "cooker"
+    }, {
+      "id": "056ca9bd-961d-419f-a4ce-5b6e520afb1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3660715b-297f-4468-ab59-e1cbfae3b2e6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.a-color-state",
+      "targets": [
+        ["css=.a-color-state", "css:finder"],
+        ["xpath=//div[@id='search']/span/div/h1/div/div/div/div/div[2]/h2/span[3]", "xpath:idRelative"],
+        ["xpath=//h2/span[3]", "xpath:position"]
+      ],
+      "value": "\"cooker\""
+    }]
+  }, {
+    "id": "88094862-c289-413e-9934-ca162e1f01d0",
+    "name": "TC1 : Sort by price (lip balm)",
+    "commands": [{
+      "id": "e1b03f45-a6d5-4c49-a8db-13f5731244ee",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "faaeece0-6678-48a3-a572-86191def4de8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ade4be05-95c9-4d14-9881-4124aedf8b76",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f58ced3-9c06-42c4-9b36-1dc2c159c303",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "lip balm"
+    }, {
+      "id": "24e15c81-7603-4d34-9d1c-63fd1a4e990a",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd55f0d7-d641-4e4b-9209-0f9c4bdb2ca8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-dropdown-prompt",
+      "targets": [
+        ["css=.a-dropdown-prompt", "css:finder"],
+        ["xpath=//span[@id='a-autoid-0-announce']/span[2]", "xpath:idRelative"],
+        ["xpath=//span/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09475b0a-b263-4341-897f-b365abaa5a29",
+      "comment": "",
+      "command": "click",
+      "target": "id=s-result-sort-select_1",
+      "targets": [
+        ["id=s-result-sort-select_1", "id"],
+        ["linkText=Price: Low to high", "linkText"],
+        ["css=#s-result-sort-select_1", "css:finder"],
+        ["xpath=//a[contains(text(),'Price: Low to high')]", "xpath:link"],
+        ["xpath=//a[@id='s-result-sort-select_1']", "xpath:attributes"],
+        ["xpath=//div[@id='a-popover-2']/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[106]", "xpath:href"],
+        ["xpath=//div[4]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Price: Low to high')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "797d303d-fd65-45cb-a4c6-7652eafff491",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.a-dropdown-prompt",
+      "targets": [
+        ["css=.a-dropdown-prompt", "css:finder"],
+        ["xpath=//span[@id='a-autoid-76-announce']/span[2]", "xpath:idRelative"],
+        ["xpath=//span/span/span[2]", "xpath:position"]
+      ],
+      "value": "Price: Low to high"
+    }]
+  }, {
+    "id": "c51d16f9-2786-4970-8c83-bccdb0af396e",
+    "name": "TC5 : search product ( Laptop)",
+    "commands": [{
+      "id": "d3ee09c4-bb5a-45cd-b5f3-52a13e794efb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a86b428-7594-4552-9858-93d55a35b2a0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "526e8d2b-7137-465a-804e-221957f91818",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "142b5540-37fb-4350-99b1-e2ae96a30ac9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93b91c6c-3ed0-468b-9f6b-06e6ceb86a77",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "laptop"
+    }, {
+      "id": "e0a03508-4302-4e56-878a-b94b8c5f3fa1",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f17ff95f-fcec-4d0b-8361-ee5bbd7104b7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.a-color-state",
+      "targets": [
+        ["css=.a-color-state", "css:finder"],
+        ["xpath=//div[@id='search']/span/div/h1/div/div/div/div/div[2]/h2/span[3]", "xpath:idRelative"],
+        ["xpath=//h2/span[3]", "xpath:position"]
+      ],
+      "value": "\"laptop\""
+    }]
+  }, {
+    "id": "2acfbfd3-5c47-48a7-9edc-91c0e66be09c",
+    "name": "TC6 : search product ( OIL)",
+    "commands": [{
+      "id": "cf6fabe5-0eb4-4c4d-9b1d-9fca271adab9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78c0f0d4-0267-4023-bc2e-94c2851bad18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d85505e-c680-449f-86c4-60c65800072a",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93ccc0fe-8441-439c-b6d1-85e41f8eec9a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a7a17c9-2320-457b-8ee0-620acbd8d2a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "oil"
+    }, {
+      "id": "f40f22f8-3247-417f-9705-a6549c127f85",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c94aa38a-1f4d-4c5f-9975-b6355b8e21c6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.a-color-state",
+      "targets": [
+        ["css=.a-color-state", "css:finder"],
+        ["xpath=//div[@id='search']/span/div/h1/div/div/div/div/div[2]/h2/span[3]", "xpath:idRelative"],
+        ["xpath=//h2/span[3]", "xpath:position"]
+      ],
+      "value": "\"oil\""
+    }]
+  }, {
+    "id": "08971d3f-6b3d-43c5-ad80-bc288735676e",
+    "name": "TC3 : Sort by price (Heels)",
+    "commands": [{
+      "id": "8eb9aa52-4fd0-4d03-8ac8-20a999e8acd3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d08f681-1b7f-49d9-95d6-0c9e0b34dced",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2eb3221-1d5e-4532-8d43-34fb8b19be20",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3d9f27e-361c-4b9b-bbd8-1e414d51eaaf",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "heels"
+    }, {
+      "id": "4fd7557d-ac5e-4a2e-b47d-da55cb12dad3",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bd8809e-63d7-4fcb-ba06-e89276653335",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-dropdown-prompt",
+      "targets": [
+        ["css=.a-dropdown-prompt", "css:finder"],
+        ["xpath=//span[@id='a-autoid-0-announce']/span[2]", "xpath:idRelative"],
+        ["xpath=//span/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eaf75e38-8f28-4f76-93c5-bfc8a8e38efb",
+      "comment": "",
+      "command": "click",
+      "target": "id=s-result-sort-select_1",
+      "targets": [
+        ["id=s-result-sort-select_1", "id"],
+        ["linkText=Price: Low to high", "linkText"],
+        ["css=#s-result-sort-select_1", "css:finder"],
+        ["xpath=//a[contains(text(),'Price: Low to high')]", "xpath:link"],
+        ["xpath=//a[@id='s-result-sort-select_1']", "xpath:attributes"],
+        ["xpath=//div[@id='a-popover-2']/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[106]", "xpath:href"],
+        ["xpath=//div[4]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Price: Low to high')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44579caa-bae5-4bda-a855-a6f7464b51be",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.a-dropdown-prompt",
+      "targets": [
+        ["css=.a-dropdown-prompt", "css:finder"],
+        ["xpath=//span[@id='a-autoid-76-announce']/span[2]", "xpath:idRelative"],
+        ["xpath=//span/span/span[2]", "xpath:position"]
+      ],
+      "value": "Price: Low to high"
+    }]
+  }, {
+    "id": "e1190f6e-4b11-47f8-97f0-08438b0a6635",
+    "name": "TC2 : Sort by price (F1 car)",
+    "commands": [{
+      "id": "10a9dabd-7957-4c55-abf3-088049952228",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7403616c-ec16-485d-8e25-c9629ff5f8a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f0479fb-3325-4d72-b682-55bb1fe84350",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16a78e52-99ea-4b94-9307-0549c0d91321",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "f1 car"
+    }, {
+      "id": "275fb821-6b2f-4245-b244-0fa7f44d7666",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f259007-afde-4a38-ab08-c57827d77527",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-dropdown-prompt",
+      "targets": [
+        ["css=.a-dropdown-prompt", "css:finder"],
+        ["xpath=//span[@id='a-autoid-0-announce']/span[2]", "xpath:idRelative"],
+        ["xpath=//span/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da56e38f-3e8a-4be1-9927-dd6d80777239",
+      "comment": "",
+      "command": "click",
+      "target": "id=s-result-sort-select_1",
+      "targets": [
+        ["id=s-result-sort-select_1", "id"],
+        ["linkText=Price: Low to high", "linkText"],
+        ["css=#s-result-sort-select_1", "css:finder"],
+        ["xpath=//a[contains(text(),'Price: Low to high')]", "xpath:link"],
+        ["xpath=//a[@id='s-result-sort-select_1']", "xpath:attributes"],
+        ["xpath=//div[@id='a-popover-2']/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[106]", "xpath:href"],
+        ["xpath=//div[4]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Price: Low to high')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bf91ea8-2812-4cd4-9680-73817e071548",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.a-dropdown-prompt",
+      "targets": [
+        ["css=.a-dropdown-prompt", "css:finder"],
+        ["xpath=//span[@id='a-autoid-76-announce']/span[2]", "xpath:idRelative"],
+        ["xpath=//span/span/span[2]", "xpath:position"]
+      ],
+      "value": "Price: Low to high"
+    }]
+  }],
+  "suites": [{
+    "id": "94a04acd-3f79-4de7-a479-875003c56cc0",
+    "name": "Search Product",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["51ca288a-f4f8-49aa-8dbe-dc84b91c267e", "c51d16f9-2786-4970-8c83-bccdb0af396e", "2acfbfd3-5c47-48a7-9edc-91c0e66be09c"]
+  }, {
+    "id": "9125aec7-366b-47ef-a318-568a002a7b1f",
+    "name": "Sort by Price",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["88094862-c289-413e-9934-ca162e1f01d0", "e1190f6e-4b11-47f8-97f0-08438b0a6635", "08971d3f-6b3d-43c5-ad80-bc288735676e"]
+  }],
+  "urls": ["https://www.amazon.ca/"],
+  "plugins": []
+}
