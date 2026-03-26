@@ -1726,7 +1726,7 @@
     }]
   }, {
     "id": "a8889e17-1fd4-49b3-8a62-c2bb2d44c5f0",
-    "name": "13_BP-01_ProceedThroughBookingSteps",
+    "name": "14_BP-02_AddAnotherPhoneNumber",
     "commands": [{
       "id": "3f5cda4c-de43-452e-8665-03a6f877867c",
       "comment": "",
@@ -1853,11 +1853,11 @@
       "id": "f23a3c56-aa50-4b4a-8f8f-19a3e0a3f115",
       "comment": "",
       "command": "click",
-      "target": "id=abcRadioButtonElement163",
+      "target": "id=abcRadioElement164",
       "targets": [
-        ["id=abcRadioButtonElement163", "id"],
-        ["css=#abcRadioButtonElement163", "css:finder"],
-        ["xpath=//input[@id='abcRadioButtonElement163']", "xpath:attributes"],
+        ["id=abcRadioButtonElement164", "id"],
+        ["css=#abcRadioButtonElement164", "css:finder"],
+        ["xpath=//input[@id='abcRadioButtonElement164']", "xpath:attributes"],
         ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[4]/ac-ui-trip-details-cont/ac-ui-trip-details-pres/section/ac-ui-cancellation-protection-with-decline-cont/ac-ui-cancellation-protection-with-decline-pres/div/div[2]/div[2]/abc-radio-group/div/div/div[3]/abc-radio-button/div/input", "xpath:idRelative"],
         ["xpath=//div[3]/abc-radio-button/div/input", "xpath:position"]
       ],
@@ -1905,17 +1905,30 @@
       ],
       "value": ""
     }, {
-      "id": "6fdc4ee1-fa64-423e-b8a4-76d75fb6559c",
-      "comment": "Test - passenger info",
-      "command": "assertText",
-      "target": "css=h1",
+      "id": "90d6f4b4-eae6-4d30-9ba9-dcf8c9dfb2e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcButtonElement195",
       "targets": [
-        ["css=h1", "css:finder"],
-        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-passengers/div/ac-ui-passenger-page-pres/div/h1", "xpath:idRelative"],
-        ["xpath=//h1", "xpath:position"],
-        ["xpath=//h1[contains(.,'Who’s travelling?')]", "xpath:innerText"]
+        ["id=abcButtonElement195", "id"],
+        ["css=#abcButtonElement195", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement195']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-passengers/div/ac-ui-passenger-page-pres/div[4]/ac-ui-passenger-contact-info-card/div/div[2]/form/fieldset/div/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add another phone number')]", "xpath:innerText"]
       ],
-      "value": "Who’s travelling?"
+      "value": ""
+    }, {
+      "id": "6da173d1-749b-4f56-8213-7ef419af656a",
+      "comment": "test - option to add a second phone number exist",
+      "command": "assertElementPresent",
+      "target": "css=.contact-phone-info-rows:nth-child(2)",
+      "targets": [
+        ["css=.contact-phone-info-rows:nth-child(2)", "css:finder"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-passengers/div/ac-ui-passenger-page-pres/div[4]/ac-ui-passenger-contact-info-card/div/div[2]/form/fieldset/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
     }]
   }, {
     "id": "3eb3431d-e465-4ebf-95c4-52755f0eec0a",
@@ -2611,10 +2624,6 @@
       ],
       "value": ""
     }]
-  }, {
-    "id": "13355bcc-e34b-4128-aa7c-4d6187c73a9c",
-    "name": "14_BP-02_AddAnotherPhoneNumber",
-    "commands": []
   }],
   "suites": [{
     "id": "bb15a708-2b01-4689-bddd-80285807b5bd",
