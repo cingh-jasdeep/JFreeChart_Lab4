@@ -1,0 +1,2629 @@
+{
+  "id": "1fe03f3f-d09f-4fb4-89a8-acd95ee8f1c3",
+  "version": "2.0",
+  "name": "A4",
+  "url": "https://www.aircanada.com",
+  "tests": [{
+    "id": "0e4df446-8d86-461a-8953-62bb6fc2d787",
+    "name": "1_FS-01_ValidOneWaySearch",
+    "commands": [{
+      "id": "45e77105-fa42-439a-a3a6-0101daefce1b",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a840612a-ff9f-493e-9d33-60219d098af0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9a03de5-ea56-4e3d-8f44-6c1044f7996c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmgFlights-trip-selector_tripTypeBtn']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-trip-selector/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a0ff093-b1e2-4616-a703-a2b9790b0973",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmgFlights-trip-selector_tripTypeBtn']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-trip-selector/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55de8fe7-dcca-4ce8-9c38-3f633158f969",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmgFlights-trip-selector_tripTypeBtn']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-trip-selector/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "499ec868-3d8c-4372-867d-f3808dc58d6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmgFlights-trip-selector_tripTypeSelector_O",
+      "targets": [
+        ["id=bkmgFlights-trip-selector_tripTypeSelector_O", "id"],
+        ["css=#bkmgFlights-trip-selector_tripTypeSelector_O", "css:finder"],
+        ["xpath=//input[@id='bkmgFlights-trip-selector_tripTypeSelector_O']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmgFlights-trip-selector_tripTypeDialogPanelBody']/div[2]/fieldset/abc-radio-group/div/div/div[2]/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7db1a4b1-ed28-449c-9443-63cd718e2cee",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.ac-h1",
+      "targets": [
+        ["css=.ac-h1", "css:finder"],
+        ["xpath=//div[@id='flightsOriginLocationbkmgLocationContainer']/div/p", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container-pres/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'YXH')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e48d5a9-3838-441c-b7e5-716216ff4216",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=abc-ripple:nth-child(4) > .abc-ripple-wrapper",
+      "targets": [
+        ["css=abc-ripple:nth-child(4) > .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//li[@id='flightsOriginLocationSearchResult0']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//li/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "add549f6-6a51-4fa6-b37e-412406acaca1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\--origin",
+      "targets": [
+        ["css=.\\--origin", "css:finder"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div/ac-dynamic-locations/div/ac-dynamic-locations-container", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d9ee92e-eb91-4e8a-bcc6-f4f4a14092f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=flightsOriginLocation",
+      "targets": [
+        ["id=flightsOriginLocation", "id"],
+        ["name=flightsOriginLocation", "name"],
+        ["css=#flightsOriginLocation", "css:finder"],
+        ["xpath=//input[@id='flightsOriginLocation']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginLocation']/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "yyc"
+    }, {
+      "id": "d9a46053-0cf7-43ea-88d1-fe4616325ad1",
+      "comment": "",
+      "command": "click",
+      "target": "css=abc-ripple:nth-child(3) > .abc-ripple-wrapper",
+      "targets": [
+        ["css=abc-ripple:nth-child(3) > .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//li[@id='flightsOriginLocationSearchResult0']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//li/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a42b0d80-a4f1-4739-bfd0-6742d6f4953f",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.ngx-ac-icon-planeLanding > svg",
+      "targets": [
+        ["css=.ngx-ac-icon-planeLanding > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "637707d9-2599-4175-80e0-b4360ea29b5a",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=flightsOriginDestination",
+      "targets": [
+        ["id=flightsOriginDestination", "id"],
+        ["name=flightsOriginDestination", "name"],
+        ["css=#flightsOriginDestination", "css:finder"],
+        ["xpath=//input[@id='flightsOriginDestination']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginDestination']/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "073b71d5-e6b0-411b-8ae0-f5aadd16f764",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\--destination",
+      "targets": [
+        ["css=.\\--destination", "css:finder"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div/ac-dynamic-locations/div/ac-dynamic-locations-container[2]", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13f8cb56-0144-45eb-a0b3-07f83df47371",
+      "comment": "",
+      "command": "type",
+      "target": "id=flightsOriginDestination",
+      "targets": [
+        ["id=flightsOriginDestination", "id"],
+        ["name=flightsOriginDestination", "name"],
+        ["css=#flightsOriginDestination", "css:finder"],
+        ["xpath=//input[@id='flightsOriginDestination']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginDestination']/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "yvr"
+    }, {
+      "id": "e03ad9a7-e78a-4a79-89f8-d3a6cb09768a",
+      "comment": "",
+      "command": "click",
+      "target": "css=abc-ripple:nth-child(3) > .abc-ripple-wrapper",
+      "targets": [
+        ["css=abc-ripple:nth-child(3) > .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//li[@id='flightsOriginDestinationSearchResult0']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/div/ac-locations-dropdown-panel/ul/li/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d718060b-573e-4231-91a3-d76abf77c1a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates",
+      "targets": [
+        ["id=bkmg-desktop_travelDates", "id"],
+        ["name=bkmg-desktop_travelDates", "name"],
+        ["css=#bkmg-desktop_travelDates", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aed865b1-5910-4945-babb-9f6d34b79648",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,43.08333206176758)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1814e562-9094-4691-82b4-72fe0b89ecaa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates-date-2026-04-05 > .date",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates-date-2026-04-05 > .date", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-05']/p", "xpath:idRelative"],
+        ["xpath=//abc-calendar-month[2]/table/tr[3]/td/abc-calendar-day/ac-calendar-day/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42728011-7282-4ea3-a0f0-f62ef99821ba",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf802bf3-8897-4a13-8f97-6661222edc3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9918f7df-39e2-4268-b2b7-fb16c4ebdbef",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=abcButtonElement20",
+      "targets": [
+        ["id=abcButtonElement20", "id"],
+        ["css=#abcButtonElement20", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement20']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-faredriven-availability/ac-ui-avail-header-pres/div/ac-ui-avail-header-block-pres/ac-ui-avail-calendar-panel-cont/ac-ui-avail-calendar-panel-pres/section/abc-tab-list/div/div/div/div/abc-tab-button[8]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//abc-tab-button[8]/abc-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c2c1f97-a797-42ed-b05b-ffcfacac07e4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=abcButtonElement20",
+      "targets": [
+        ["id=abcButtonElement20", "id"],
+        ["css=#abcButtonElement20", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement20']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-faredriven-availability/ac-ui-avail-header-pres/div/ac-ui-avail-header-block-pres/ac-ui-avail-calendar-panel-cont/ac-ui-avail-calendar-panel-pres/section/abc-tab-list/div/div/div/div/abc-tab-button[8]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//abc-tab-button[8]/abc-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2112a37-be6c-4bba-9a32-06714bbbe21e",
+      "comment": "Test - loaded departing flight ",
+      "command": "assertText",
+      "target": ".page-title > h1:nth-child(1)",
+      "targets": [],
+      "value": " Departing flight "
+    }, {
+      "id": "018bbd1d-3198-4f9d-8e13-187790440c04",
+      "comment": "Test - departing city is Calgary",
+      "command": "assertText",
+      "target": ".city-pairing-origin-city",
+      "targets": [],
+      "value": "Calgary"
+    }, {
+      "id": "8a6e52b6-0202-4668-9991-1056c5154e3a",
+      "comment": "Test - destination city is Vancouver",
+      "command": "assertText",
+      "target": ".city-pairing-destination-city",
+      "targets": [],
+      "value": " Vancouver"
+    }]
+  }, {
+    "id": "e4ed0555-7bbc-4044-adfe-012fbf756fea",
+    "name": "2_FS-02_ValidRoundTripSearch",
+    "commands": [{
+      "id": "02d12d5f-8d65-4a9b-97cd-d4689a89b9a0",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89c8e8fb-ce0d-4005-9635-e56a135856aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "801143aa-23b6-48be-836b-1b7a941c7fea",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmg-desktop_selectTravelers .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmg-desktop_selectTravelers .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_selectTravelers']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-select-travelers/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e79ff588-58b9-451e-b259-b49b4abfbf4f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#bkmg-desktop_selectTravelers .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmg-desktop_selectTravelers .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_selectTravelers']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-select-travelers/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c72920d4-1e28-4fd4-810b-f90b202840d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmgFlights-trip-selector_tripTypeBtn']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-trip-selector/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4555b630-be99-4fd7-b1af-347f6fe74b70",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmgFlights-trip-selector_tripTypeBtn']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-trip-selector/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97acf05a-b26c-49fe-b86c-f2692a99e618",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmgFlights-trip-selector_tripTypeBtn']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-trip-selector/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77b1bb94-af06-4440-9ce3-0cd110d656bc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmgFlights-trip-selector_tripTypeSelector_R",
+      "targets": [
+        ["id=bkmgFlights-trip-selector_tripTypeSelector_R", "id"],
+        ["name=abcFormFieldElement80", "name"],
+        ["css=#bkmgFlights-trip-selector_tripTypeSelector_R", "css:finder"],
+        ["xpath=//input[@id='bkmgFlights-trip-selector_tripTypeSelector_R']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmgFlights-trip-selector_tripTypeDialogPanelBody']/div[2]/fieldset/abc-radio-group/div/div/div/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fd47c34-e92b-4648-a777-3d95cad48cb6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmgFlights-trip-selector_tripTypeSelector_R",
+      "targets": [
+        ["id=bkmgFlights-trip-selector_tripTypeSelector_R", "id"],
+        ["name=abcFormFieldElement80", "name"],
+        ["css=#bkmgFlights-trip-selector_tripTypeSelector_R", "css:finder"],
+        ["xpath=//input[@id='bkmgFlights-trip-selector_tripTypeSelector_R']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmgFlights-trip-selector_tripTypeDialogPanelBody']/div[2]/fieldset/abc-radio-group/div/div/div/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e052e06c-31be-4ab0-95ed-d782c62c5bd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmgFlights-trip-selector_tripTypeSelector_R",
+      "targets": [
+        ["id=bkmgFlights-trip-selector_tripTypeSelector_R", "id"],
+        ["name=abcFormFieldElement80", "name"],
+        ["css=#bkmgFlights-trip-selector_tripTypeSelector_R", "css:finder"],
+        ["xpath=//input[@id='bkmgFlights-trip-selector_tripTypeSelector_R']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmgFlights-trip-selector_tripTypeDialogPanelBody']/div[2]/fieldset/abc-radio-group/div/div/div/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7038cc91-4300-4b70-ae55-2e4ae568abac",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#flightsOriginLocationbkmgLocationContainer .ac-h1",
+      "targets": [
+        ["css=#flightsOriginLocationbkmgLocationContainer .ac-h1", "css:finder"],
+        ["xpath=//div[@id='flightsOriginLocationbkmgLocationContainer']/div/p", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container-pres/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'YYC')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14788923-35b0-4958-9a81-54fde58cea89",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=flightsOriginLocation",
+      "targets": [
+        ["id=flightsOriginLocation", "id"],
+        ["name=flightsOriginLocation", "name"],
+        ["css=#flightsOriginLocation", "css:finder"],
+        ["xpath=//input[@id='flightsOriginLocation']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginLocation']/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d3d9f9e-4643-47f3-9afc-e4659839b1de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\--origin",
+      "targets": [
+        ["css=.\\--origin", "css:finder"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div/ac-dynamic-locations/div/ac-dynamic-locations-container", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21b1d65b-384a-4d1a-8c9e-c47e44436b45",
+      "comment": "",
+      "command": "click",
+      "target": "css=abc-ripple:nth-child(3) > .abc-ripple-wrapper",
+      "targets": [
+        ["css=abc-ripple:nth-child(3) > .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//li[@id='flightsOriginLocationSearchResult0']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//li/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1451be4d-178c-4491-8ee7-4fdf98913f07",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#flightsOriginDestinationbkmgLocationContainer .ac-h1",
+      "targets": [
+        ["css=#flightsOriginDestinationbkmgLocationContainer .ac-h1", "css:finder"],
+        ["xpath=//div[@id='flightsOriginDestinationbkmgLocationContainer']/div/p", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/ac-dynamic-locations-container-pres/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'YVR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "442c539d-b6df-4cf4-a940-fa0870724283",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=flightsOriginDestinationOptionsPanel",
+      "targets": [
+        ["id=flightsOriginDestinationOptionsPanel", "id"],
+        ["css=#flightsOriginDestinationOptionsPanel", "css:finder"],
+        ["xpath=//ul[@id='flightsOriginDestinationOptionsPanel']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginDestination']/div/ac-locations-dropdown-panel/ul", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/div/ac-locations-dropdown-panel/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "864c2525-d16e-4422-a41f-bde0ddd7053a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\--destination",
+      "targets": [
+        ["css=.\\--destination", "css:finder"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div/ac-dynamic-locations/div/ac-dynamic-locations-container[2]", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9413d53b-cbc9-4c1b-9c6b-117086e3ea9a",
+      "comment": "",
+      "command": "type",
+      "target": "id=flightsOriginDestination",
+      "targets": [
+        ["id=flightsOriginDestination", "id"],
+        ["name=flightsOriginDestination", "name"],
+        ["css=#flightsOriginDestination", "css:finder"],
+        ["xpath=//input[@id='flightsOriginDestination']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginDestination']/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "vancouver"
+    }, {
+      "id": "20afc917-08d9-4cc6-818e-9ddc3d79ed7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=abc-ripple:nth-child(3) > .abc-ripple-wrapper",
+      "targets": [
+        ["css=abc-ripple:nth-child(3) > .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//li[@id='flightsOriginDestinationSearchResult0']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/div/ac-locations-dropdown-panel/ul/li/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e59ea742-047f-4e1a-87b5-f3adc804e785",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-formfield-1",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-formfield-1", "id"],
+        ["name=bkmg-desktop_travelDates-formfield-1", "name"],
+        ["css=#bkmg-desktop_travelDates-formfield-1", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates-formfield-1']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15a778e1-10ff-4b06-b085-12f7f3dfa184",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,149.4166717529297)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f1825eb-6639-440f-afe8-fefeaae1fbb8",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-date-2026-04-05",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-date-2026-04-05", "id"],
+        ["css=#bkmg-desktop_travelDates-date-2026-04-05", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-05']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates_content']/div/abc-calendar-month[2]/table/tr[3]/td/abc-calendar-day/ac-calendar-day/div", "xpath:idRelative"],
+        ["xpath=//abc-calendar-month[2]/table/tr[3]/td/abc-calendar-day/ac-calendar-day/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cded9ae-6259-472f-968c-14da549112d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-formfield-2",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-formfield-2", "id"],
+        ["name=bkmg-desktop_travelDates-formfield-2", "name"],
+        ["css=#bkmg-desktop_travelDates-formfield-2", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates-formfield-2']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input[2]/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//abc-input[2]/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afb9a656-6254-4d94-9890-68e89b9b32c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-date-2026-04-06",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-date-2026-04-06", "id"],
+        ["css=#bkmg-desktop_travelDates-date-2026-04-06", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-06']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates_content']/div/abc-calendar-month[2]/table/tr[3]/td[2]/abc-calendar-day/ac-calendar-day/div", "xpath:idRelative"],
+        ["xpath=//abc-calendar-month[2]/table/tr[3]/td[2]/abc-calendar-day/ac-calendar-day/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe2f436c-095a-4cbd-a109-bd2305167a6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.abc-overlay-aligned-to-parent",
+      "targets": [
+        ["css=.abc-overlay-aligned-to-parent", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesAbcCalendarDialog']/div", "xpath:idRelative"],
+        ["xpath=//abc-dialog/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50177f66-654a-4951-8384-ced0fe5e496e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bea3ee63-4507-4315-885e-d187d3a88535",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18353775-ebe1-45b9-9b4e-a5910edb0455",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,138.4166717529297)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e155d291-3c41-4a36-a453-822fcd6bc058",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cabin-fare-1-Y > .cabin-price",
+      "targets": [
+        ["css=.cabin-fare-1-Y > .cabin-price", "css:finder"],
+        ["xpath=//div[@id='flight-row-bbf6233b-f628-4eb2-81a5-47878a7e34ec']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/span", "xpath:idRelative"],
+        ["xpath=//li[2]/ac-ui-avail-flight-row-pres/div/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d69fa84-e017-49ed-a8c1-16d16a7d4555",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26ff380a-feb5-4a74-8176-49b4482d2b5a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='flight-row-e79208a3-f8b2-4b0f-b63b-ab42656c02b9']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d5e6e2c-0407-452d-bd99-6a6a2dc47b12",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='flight-row-e79208a3-f8b2-4b0f-b63b-ab42656c02b9']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97823b57-01c4-4286-8f6f-ad469acae406",
+      "comment": "Test - loaded departing flight ",
+      "command": "assertText",
+      "target": ".page-title > h1:nth-child(1)",
+      "targets": [],
+      "value": " Departing flight "
+    }]
+  }, {
+    "id": "81f8e7db-d037-43b6-96d3-d6f3be4c3b51",
+    "name": "3_FS-03_InvalidCity",
+    "commands": [{
+      "id": "e1f3b6b6-7817-4cb0-ac2e-fea6b3b5887d",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82d69693-f684-46c2-8ee5-e2f6098f338c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "893x946",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebb50bef-711a-42ba-82d5-8f2ec4a57f79",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3865a826-ff63-424c-ad1d-fc27d180041e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#libraUserMenu-joinNow .abc-ripple-wrapper",
+      "targets": [
+        ["css=#libraUserMenu-joinNow .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='libraUserMenu-joinNow']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ngx-ac-aco-user-menu/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7555bc18-3507-4b45-b4e3-6561ddeea977",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmg-desktop_searchTypeToggle",
+      "targets": [
+        ["id=bkmg-desktop_searchTypeToggle", "id"],
+        ["css=#bkmg-desktop_searchTypeToggle", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_searchTypeToggle']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/div/ac-search-type-toggle/div/div/abc-checkbox/div/div/input", "xpath:idRelative"],
+        ["xpath=//abc-checkbox/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c32cb993-4183-4d02-99ca-88e957bf0446",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmgFlights-trip-selector_tripTypeBtn']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-trip-selector/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "069392f8-579c-4781-aba5-8985f1d745ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmgFlights-trip-selector_tripTypeSelector_R",
+      "targets": [
+        ["id=bkmgFlights-trip-selector_tripTypeSelector_R", "id"],
+        ["name=abcFormFieldElement82", "name"],
+        ["css=#bkmgFlights-trip-selector_tripTypeSelector_R", "css:finder"],
+        ["xpath=//input[@id='bkmgFlights-trip-selector_tripTypeSelector_R']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmgFlights-trip-selector_tripTypeDialogPanelBody']/div[2]/fieldset/abc-radio-group/div/div/div/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbf9343c-8d50-40b2-bdc4-11e3ef2faadc",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#flightsOriginLocationbkmgLocationContainer .ac-h1",
+      "targets": [
+        ["css=#flightsOriginLocationbkmgLocationContainer .ac-h1", "css:finder"],
+        ["xpath=//div[@id='flightsOriginLocationbkmgLocationContainer']/div/p", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container-pres/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'YYC')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1760f87-7cd2-4fb9-ace4-a94d50f6c3ca",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=flightsOriginLocationOptionsPanel",
+      "targets": [
+        ["id=flightsOriginLocationOptionsPanel", "id"],
+        ["css=#flightsOriginLocationOptionsPanel", "css:finder"],
+        ["xpath=//ul[@id='flightsOriginLocationOptionsPanel']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginLocation']/div/ac-locations-dropdown-panel/ul", "xpath:idRelative"],
+        ["xpath=//ac-locations-dropdown-panel/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "253945b1-1545-4837-8686-b66b278d8bfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\--origin",
+      "targets": [
+        ["css=.\\--origin", "css:finder"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div/ac-dynamic-locations/div/ac-dynamic-locations-container", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "443184ff-3953-438d-974c-cf4065ffa7b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#flightsOriginLocationSearchResult0 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#flightsOriginLocationSearchResult0 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//li[@id='flightsOriginLocationSearchResult0']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//li/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2827815c-4f06-477d-9acb-c56c3c436bc8",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#flightsOriginDestinationbkmgLocationContainer > .dynamic_flights__container--post_selector",
+      "targets": [
+        ["css=#flightsOriginDestinationbkmgLocationContainer > .dynamic_flights__container--post_selector", "css:finder"],
+        ["xpath=//div[@id='flightsOriginDestinationbkmgLocationContainer']/div", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/ac-dynamic-locations-container-pres/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec4676a5-68ac-4012-bdaf-9f05fd031906",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#flightsOriginDestinationSearchResult0 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#flightsOriginDestinationSearchResult0 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//li[@id='flightsOriginDestinationSearchResult0']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/div/ac-locations-dropdown-panel/ul/li/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75c3c877-fe6e-44cd-86b2-b8779528f579",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\--destination",
+      "targets": [
+        ["css=.\\--destination", "css:finder"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div/ac-dynamic-locations/div/ac-dynamic-locations-container[2]", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2325eb00-e898-4f0b-ac04-04da94132970",
+      "comment": "",
+      "command": "type",
+      "target": "id=flightsOriginDestination",
+      "targets": [
+        ["id=flightsOriginDestination", "id"],
+        ["name=flightsOriginDestination", "name"],
+        ["css=#flightsOriginDestination", "css:finder"],
+        ["xpath=//input[@id='flightsOriginDestination']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginDestination']/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "xxxxxx"
+    }, {
+      "id": "82eac8e7-0837-4449-92e0-c63806f42907",
+      "comment": "",
+      "command": "click",
+      "target": "css=.one-way-form > .container",
+      "targets": [
+        ["css=.one-way-form > .container", "css:finder"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfe6f85d-8af1-4661-86be-3ee77c286ee2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cff6d290-fbb8-490d-b94b-8b92172e1939",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7912ed05-1179-4915-9c66-f27f04570dfb",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75ce7b57-b7b6-4249-ab46-d298a58e591f",
+      "comment": "",
+      "command": "type",
+      "target": "id=flightsOriginDestination",
+      "targets": [
+        ["id=flightsOriginDestination", "id"],
+        ["name=flightsOriginDestination", "name"],
+        ["css=#flightsOriginDestination", "css:finder"],
+        ["xpath=//input[@id='flightsOriginDestination']", "xpath:attributes"],
+        ["xpath=//form[@id='dynamicLocationFormflightsOriginDestination']/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//ac-dynamic-locations-container[2]/div/form/abc-typeahead/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "xxxxx"
+    }, {
+      "id": "7a382060-25c1-40b1-93c1-3cc1a5cbc088",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69525105-8a20-4533-9667-ef113d43be79",
+      "comment": "Test - error on invalid city search",
+      "command": "assertText",
+      "target": ".search-location-prompt-message",
+      "targets": [],
+      "value": " No results found "
+    }]
+  }, {
+    "id": "8746e95f-f4f5-4484-8c46-e3d16444d538",
+    "name": "4_FS-04_PastDateSearch",
+    "commands": [{
+      "id": "89504d4d-5adc-4013-a879-cba6cba0767f",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff51e5e4-f018-45c4-afe2-91f4d7092801",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60095363-f8b2-4ec0-ab81-9d2fe0d92eb6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.abc-form-element-suffix-icon",
+      "targets": [
+        ["css=.abc-form-element-suffix-icon", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates-showCalendar']/span", "xpath:idRelative"],
+        ["xpath=//abc-date-picker/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d10e099c-d554-4ad2-87b2-87940f7496ad",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.abc-form-element-suffix-icon",
+      "targets": [
+        ["css=.abc-form-element-suffix-icon", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates-showCalendar']/span", "xpath:idRelative"],
+        ["xpath=//abc-date-picker/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09adf298-5b09-4102-87e0-0efab36e06a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-formfield-1",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-formfield-1", "id"],
+        ["name=bkmg-desktop_travelDates-formfield-1", "name"],
+        ["css=#bkmg-desktop_travelDates-formfield-1", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates-formfield-1']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae5f339d-07d7-4c92-bf09-e02e85e74e64",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,158.5833282470703)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4229ae0-70ea-4dc9-b454-f6f268160108",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmg-desktop_travelDates_previousMonth .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_previousMonth .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_previousMonth']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//abc-calendar/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a0dc63f-8e5e-4fb0-815d-f1233a0c9e12",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates_previousMonth .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_previousMonth .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_previousMonth']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//abc-calendar/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03992d63-88a9-41e8-8c54-253f1216bcc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates-date-2026-03-02 > .date",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates-date-2026-03-02 > .date", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-03-02']/p", "xpath:idRelative"],
+        ["xpath=//td[2]/abc-calendar-day/ac-calendar-day/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49c736b7-d7ef-469c-a3b0-8805c2f45ce6",
+      "comment": "Test - past date (Invalid)",
+      "command": "assertElementPresent",
+      "target": "css=div#bkmg-desktop_travelDates-date-2026-03-01.disabled",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "609ce52d-28fd-4807-8081-6778c4bb7dee",
+      "comment": "Test - future date (Valid)",
+      "command": "assertElementNotPresent",
+      "target": "css=div#bkmg-desktop_travelDates-date-2026-03-21.disabled",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dcb2a96-86f7-4e90-ba6e-7085efea361c",
+      "comment": "Test - today's date (Valid)",
+      "command": "assertElementPresent",
+      "target": "css=div#bkmg-desktop_travelDates-date-2026-03-20.disabled",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3e398f3c-572d-48fe-bf33-afdb8f0f7d58",
+    "name": "5_TD-01_SelectDepartureDate",
+    "commands": [{
+      "id": "95e582a1-c5fb-45c1-8996-3e727c5d1ebb",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "292ce1ff-3c0a-43f5-a127-79e776a72065",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b34c06b9-2e3f-436a-99aa-bcf321de0dd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-formfield-1",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-formfield-1", "id"],
+        ["name=bkmg-desktop_travelDates-formfield-1", "name"],
+        ["css=#bkmg-desktop_travelDates-formfield-1", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates-formfield-1']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b97af05d-784d-4557-94bd-3103edc6c988",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,136.5833282470703)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5641cde7-08cb-4036-b21f-e674981c59e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates-date-2026-04-25 > .date",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates-date-2026-04-25 > .date", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-25']/p", "xpath:idRelative"],
+        ["xpath=//abc-calendar-month[2]/table/tr[5]/td[7]/abc-calendar-day/ac-calendar-day/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de472cc9-a19d-4f1a-884d-922f4b59c794",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates_1_confirmDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_confirmDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_confirmDates']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dfa4b08-9660-4fe4-a213-fe9c96b317ac",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_clearDates']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Clear dates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc03d404-f8a0-4556-8882-bd83ff016dc8",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-date-2026-04-30",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-date-2026-04-30", "id"],
+        ["css=#bkmg-desktop_travelDates-date-2026-04-30", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-30']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates_content']/div/abc-calendar-month[2]/table/tr[6]/td[5]/abc-calendar-day/ac-calendar-day/div", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[5]/abc-calendar-day/ac-calendar-day/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2326306d-bc46-4c43-90b1-b7e94d2496a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates_1_confirmDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_confirmDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_confirmDates']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "887b382e-7692-4a34-aa2a-6048fe9cba6f",
+      "comment": "Test - date input spans exist on page",
+      "command": "assertElementPresent",
+      "target": "css=span.abc-date-picker-user-input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16916d3e-5270-429c-9676-507c4870018c",
+      "comment": "Test - departure date",
+      "command": "assertText",
+      "target": "xpath=(//span[@class='abc-date-picker-user-input ng-star-inserted'])[1]",
+      "targets": [],
+      "value": "Sat Apr 25"
+    }, {
+      "id": "6489c44e-2d6c-4ea9-9c86-bf2ed656184d",
+      "comment": "Test - return date",
+      "command": "assertText",
+      "target": "xpath=(//span[@class='abc-date-picker-user-input ng-star-inserted'])[2]",
+      "targets": [],
+      "value": "Thu Apr 30"
+    }]
+  }, {
+    "id": "c9ccff5c-3667-4626-82a3-b2d9ebc33af3",
+    "name": "6_TD-02_ReturnDateBeforeDeparture",
+    "commands": [{
+      "id": "b6d97a33-2568-43c9-8d75-d6be17d8b2df",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "975d7115-b227-485d-80ec-a7093029bb3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c6167c3-8dde-42e1-b530-31407f78e331",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-formfield-1",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-formfield-1", "id"],
+        ["name=bkmg-desktop_travelDates-formfield-1", "name"],
+        ["css=#bkmg-desktop_travelDates-formfield-1", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates-formfield-1']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d96c7af-8df3-4e90-be30-4b90ecfea1eb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,88.91666412353516)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14b53f9c-5875-4f61-b9ea-a3932ca113bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates-date-2026-04-05 > .date",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates-date-2026-04-05 > .date", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-05']/p", "xpath:idRelative"],
+        ["xpath=//abc-calendar-month[2]/table/tr[3]/td/abc-calendar-day/ac-calendar-day/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ea52aaf-ee24-4b09-9682-068d436bb409",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-formfield-2",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-formfield-2", "id"],
+        ["name=bkmg-desktop_travelDates-formfield-2", "name"],
+        ["css=#bkmg-desktop_travelDates-formfield-2", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates-formfield-2']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input[2]/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//abc-input[2]/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed15f2d4-ec81-440d-938e-779fd813e692",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-date-2026-03-21",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-date-2026-03-21", "id"],
+        ["css=#bkmg-desktop_travelDates-date-2026-03-21", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-03-21']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates_content']/div/abc-calendar-month/table/tr[4]/td[7]/abc-calendar-day/ac-calendar-day/div", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[7]/abc-calendar-day/ac-calendar-day/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a52dc7b-b526-45ea-9f33-e73ee1e4ffba",
+      "comment": "Test - date input spans exist on page",
+      "command": "assertElementPresent",
+      "target": "css=span.abc-date-picker-user-input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7fa356f-764d-4294-918f-608e3b555899",
+      "comment": "Test - departure date is updated",
+      "command": "assertText",
+      "target": "xpath=(//span[@class='abc-date-picker-user-input ng-star-inserted'])[1]",
+      "targets": [],
+      "value": "Sat Mar 21"
+    }, {
+      "id": "839d17c5-6ebf-412a-a6a1-bcf7d3e929f7",
+      "comment": "Test - reset return date ",
+      "command": "assertElementNotPresent",
+      "target": "xpath=(//span[@class='abc-date-picker-user-input ng-star-inserted'])[2]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cf4d3a01-9675-4403-9594-961efd307cf4",
+    "name": "8_TD-04_SameDayDepartureAndReturn",
+    "commands": [{
+      "id": "ff3744af-5b93-4920-b7af-d97c04c86056",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42a855a0-64d0-4a75-8c18-3f1b8843d1f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "915cb1cb-c410-4de4-878f-6c100707390b",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-formfield-1",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-formfield-1", "id"],
+        ["name=bkmg-desktop_travelDates-formfield-1", "name"],
+        ["css=#bkmg-desktop_travelDates-formfield-1", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates-formfield-1']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06952745-dfea-4e14-91ef-853abd3124d4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,183.3333282470703)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce75d445-64e1-4419-baff-8d949cbc5679",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates-date-2026-04-05 > .date",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates-date-2026-04-05 > .date", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-05']/p", "xpath:idRelative"],
+        ["xpath=//abc-calendar-month[2]/table/tr[3]/td/abc-calendar-day/ac-calendar-day/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f193f490-dd5d-4d50-8cde-459940c0c575",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,293.3333435058594)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cebd220e-c247-4293-a485-6ece6123f32c",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-date-2026-04-05",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-date-2026-04-05", "id"],
+        ["css=#bkmg-desktop_travelDates-date-2026-04-05", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-05']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates_content']/div/abc-calendar-month[2]/table/tr[3]/td/abc-calendar-day/ac-calendar-day/div", "xpath:idRelative"],
+        ["xpath=//abc-calendar-month[2]/table/tr[3]/td/abc-calendar-day/ac-calendar-day/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2fd2a5e-8799-460c-9c3c-1724ebec0fda",
+      "comment": "Test - date input spans exist on page",
+      "command": "assertElementPresent",
+      "target": "css=span.abc-date-picker-user-input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a327805-4fba-400d-a432-69e6d107ac66",
+      "comment": "Test - departure date",
+      "command": "assertText",
+      "target": "xpath=(//span[@class='abc-date-picker-user-input ng-star-inserted'])[1]",
+      "targets": [],
+      "value": "Sun Apr 5"
+    }, {
+      "id": "0a55d66c-813a-461f-a6db-d88452afcab2",
+      "comment": "Test - same return date",
+      "command": "assertText",
+      "target": "xpath=(//span[@class='abc-date-picker-user-input ng-star-inserted'])[2]",
+      "targets": [],
+      "value": "Sun Apr 5"
+    }, {
+      "id": "c317c4f6-c36e-4ef5-9d72-acb9ea25b961",
+      "comment": "Test - sytem flags it as same day return",
+      "command": "assertText",
+      "target": "css=.selected-dates-info > .ng-star-inserted > .ac-paragraphs-m",
+      "targets": [
+        ["css=.selected-dates-info > .ng-star-inserted > .ac-paragraphs-m", "css:finder"],
+        ["xpath=//div[@id='bkmg-mobile-tablet_travelDatesAbcCalendarDialog']/div[3]/div/div/div[4]/div[2]/ac-calendar-footer/div[2]/div[2]/div[3]/div/p", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Same-day return')]", "xpath:innerText"]
+      ],
+      "value": "Same-day return"
+    }]
+  }, {
+    "id": "487f3aa4-a30d-4ab5-abd8-41867f200ee0",
+    "name": "10_SS-01_ViewSeatMap",
+    "commands": [{
+      "id": "80885929-8d3e-46b4-80af-96e751dafa49",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2aa07de-8598-41df-8b28-f5bca52b70c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c7b1783-9124-4485-8100-64b636ae8c77",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper",
+      "targets": [
+        ["css=#bkmgFlights-trip-selector_tripTypeBtn .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='bkmgFlights-trip-selector_tripTypeBtn']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//ac-trip-selector/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d2c692c-eba0-45a1-9072-2e7e7413d111",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmgFlights-trip-selector_tripTypeSelector_O",
+      "targets": [
+        ["id=bkmgFlights-trip-selector_tripTypeSelector_O", "id"],
+        ["css=#bkmgFlights-trip-selector_tripTypeSelector_O", "css:finder"],
+        ["xpath=//input[@id='bkmgFlights-trip-selector_tripTypeSelector_O']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmgFlights-trip-selector_tripTypeDialogPanelBody']/div[2]/fieldset/abc-radio-group/div/div/div[2]/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18eb0b30-997f-4968-9793-c3a320ade769",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cf77ce4-b7b6-4217-a832-83fecd7dff5c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.botton-wrapper:nth-child(2) .cabin-heading",
+      "targets": [
+        ["css=.botton-wrapper:nth-child(2) .cabin-heading", "css:finder"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-faredriven-availability/section/ac-ui-avail-flight-block-header-pres/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Economy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51d9ea99-be96-4a27-bda0-6354e3279db4",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcButtonElement36",
+      "targets": [
+        ["id=abcButtonElement36", "id"],
+        ["css=#abcButtonElement36", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement36']", "xpath:attributes"],
+        ["xpath=//div[@id='flight-row-2b32eecb-cf11-4362-8bb8-2670237b334f']/div/ac-ui-flight-block-summary-pres/div/div/ac-ui-flight-block-footer/div/div/div[2]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Seats')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d074e05-fc05-45bb-b886-ffc1165d145d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=seatId-2D-5-4",
+      "targets": [
+        ["id=seatId-2D-5-4", "id"],
+        ["css=#seatId-2D-5-4", "css:finder"],
+        ["xpath=//button[@id='seatId-2D-5-4']", "xpath:attributes"],
+        ["xpath=//div[@id='cabin-cont-business']/table/tr[5]/td[4]/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[4]/div/abc-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90e79563-a1d1-4e69-a786-daf57dc52168",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=seatId-2D-5-4",
+      "targets": [
+        ["id=seatId-2D-5-4", "id"],
+        ["css=#seatId-2D-5-4", "css:finder"],
+        ["xpath=//button[@id='seatId-2D-5-4']", "xpath:attributes"],
+        ["xpath=//div[@id='cabin-cont-business']/table/tr[5]/td[4]/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[4]/div/abc-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7cae9f1-3d3f-4c2d-89e2-c92738dacc9d",
+      "comment": "Test - seat map is visible",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='seatmapCabinLayout']/div/div[2]/ac-ui-seatmap-layout-cont/ac-ui-seatmap-layout-pres",
+      "targets": [
+        ["css=.preview-seatmap-container > .ng-tns-c896728841-23 > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[@id='seatmapCabinLayout']/div/div[2]/ac-ui-seatmap-layout-cont/ac-ui-seatmap-layout-pres", "xpath:idRelative"],
+        ["xpath=//ac-ui-seatmap-layout-pres", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ab7f3b74-5aa9-4cb0-a4f7-3a00513ca302",
+    "name": "11_SS-02_InfoAvailableSeat",
+    "commands": [{
+      "id": "22e755ba-6902-4521-a674-ea4ea47bce6b",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2945508-4d30-4374-af4d-08254fe217d7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7df5afb9-20be-415b-b587-c653d353a873",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50c9ecef-5427-4d6f-9e9f-71b48dd17964",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d563e70-38be-4101-9970-a4048b7fe97c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,110)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c864502-5edd-4eda-a982-0908c7d4ff5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c1608969702-2 .segments-timeline",
+      "targets": [
+        ["css=.ng-tns-c1608969702-2 .segments-timeline", "css:finder"],
+        ["xpath=//div[@id='flight-row-e3a45e4a-dbb0-4d2d-b454-49c474af27df']/div/ac-ui-flight-block-summary-pres/div/div/div[2]/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68cb2fb4-3d09-444d-aaa3-a2d36b57a98c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=abcButtonElement36",
+      "targets": [
+        ["id=abcButtonElement36", "id"],
+        ["css=#abcButtonElement36", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement36']", "xpath:attributes"],
+        ["xpath=//div[@id='flight-row-e3a45e4a-dbb0-4d2d-b454-49c474af27df']/div/ac-ui-flight-block-summary-pres/div/div/ac-ui-flight-block-footer/div/div/div[2]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Seats')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a653ab7e-a294-4eaf-b264-2fe614d36206",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcButtonElement36",
+      "targets": [
+        ["id=abcButtonElement36", "id"],
+        ["css=#abcButtonElement36", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement36']", "xpath:attributes"],
+        ["xpath=//div[@id='flight-row-e3a45e4a-dbb0-4d2d-b454-49c474af27df']/div/ac-ui-flight-block-summary-pres/div/div/ac-ui-flight-block-footer/div/div/div[2]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Seats')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1a2d6a8-2b88-42fe-bc82-0dbe1ddb3417",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=abcButtonElement36",
+      "targets": [
+        ["id=abcButtonElement36", "id"],
+        ["css=#abcButtonElement36", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement36']", "xpath:attributes"],
+        ["xpath=//div[@id='flight-row-e3a45e4a-dbb0-4d2d-b454-49c474af27df']/div/ac-ui-flight-block-summary-pres/div/div/ac-ui-flight-block-footer/div/div/div[2]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Seats')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98473d26-5d24-452c-8d0b-21abe0e963f4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=facility-business-3-1",
+      "targets": [
+        ["id=facility-business-3-1", "id"],
+        ["css=#facility-business-3-1", "css:finder"],
+        ["xpath=//button[@id='facility-business-3-1']", "xpath:attributes"],
+        ["xpath=//div[@id='cabin-cont-business']/table/tr[3]/td/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/abc-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ea0c7f3-87e0-4e73-beed-8f20c402a279",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=facility-business-3-1",
+      "targets": [
+        ["id=facility-business-3-1", "id"],
+        ["css=#facility-business-3-1", "css:finder"],
+        ["xpath=//button[@id='facility-business-3-1']", "xpath:attributes"],
+        ["xpath=//div[@id='cabin-cont-business']/table/tr[3]/td/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Closet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c97cc17-a5c6-40ed-8887-891cecad29ea",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=seatId-1C-4-2",
+      "targets": [
+        ["id=seatId-1C-4-2", "id"],
+        ["css=#seatId-1C-4-2", "css:finder"],
+        ["xpath=//button[@id='seatId-1C-4-2']", "xpath:attributes"],
+        ["xpath=//div[@id='cabin-cont-business']/table/tr[4]/td[2]/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//td[2]/div/abc-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f4db414-66a3-4a6d-bafb-7a35d3b3e5ac",
+      "comment": "Test - available seat info",
+      "command": "assertElementPresent",
+      "target": "css=#seat-info-4-2",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "739d7997-85d2-4167-a562-902814682bfc",
+    "name": "12_SS-03_InfoUnvailableSeat",
+    "commands": [{
+      "id": "2f7cc3dc-2eb9-4215-aeb7-bbad64d71e45",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93ddb6a3-9fe8-4449-b2e8-20784415cb2d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e9418ba-a2cc-436f-9dd6-99235ff100a9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cf4cf43-d4d2-4383-81d1-0af65ded9050",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff3055aa-4305-4663-b2fd-f724221551fd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,110)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3059b8be-62c8-41d7-ab73-1d5b75e3aab6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c1608969702-2 .segments-timeline",
+      "targets": [
+        ["css=.ng-tns-c1608969702-2 .segments-timeline", "css:finder"],
+        ["xpath=//div[@id='flight-row-e3a45e4a-dbb0-4d2d-b454-49c474af27df']/div/ac-ui-flight-block-summary-pres/div/div/div[2]/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "642daf0f-6c4a-42a0-9769-a6665ce88380",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=abcButtonElement36",
+      "targets": [
+        ["id=abcButtonElement36", "id"],
+        ["css=#abcButtonElement36", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement36']", "xpath:attributes"],
+        ["xpath=//div[@id='flight-row-e3a45e4a-dbb0-4d2d-b454-49c474af27df']/div/ac-ui-flight-block-summary-pres/div/div/ac-ui-flight-block-footer/div/div/div[2]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Seats')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53010350-9a13-49c5-86e9-3cb74663fd89",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcButtonElement36",
+      "targets": [
+        ["id=abcButtonElement36", "id"],
+        ["css=#abcButtonElement36", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement36']", "xpath:attributes"],
+        ["xpath=//div[@id='flight-row-e3a45e4a-dbb0-4d2d-b454-49c474af27df']/div/ac-ui-flight-block-summary-pres/div/div/ac-ui-flight-block-footer/div/div/div[2]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Seats')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba881777-6cf1-4825-88fe-98ea7659725d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=abcButtonElement36",
+      "targets": [
+        ["id=abcButtonElement36", "id"],
+        ["css=#abcButtonElement36", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement36']", "xpath:attributes"],
+        ["xpath=//div[@id='flight-row-e3a45e4a-dbb0-4d2d-b454-49c474af27df']/div/ac-ui-flight-block-summary-pres/div/div/ac-ui-flight-block-footer/div/div/div[2]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Seats')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "501ff1da-b519-4ef2-bc1d-0b3a573aba53",
+      "comment": "Test - unavailable seat",
+      "command": "assertElementPresent",
+      "target": "css=button#seatId-1D-4-4[disabled]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99ac8acb-38bd-44e1-abb3-b42097e7b5fc",
+      "comment": "Test - no info for unavailable seat",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//div[@id='seat-info-4-4']//span[text()='available seat']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a8889e17-1fd4-49b3-8a62-c2bb2d44c5f0",
+    "name": "13_BP-01_ProceedThroughBookingSteps",
+    "commands": [{
+      "id": "3f5cda4c-de43-452e-8665-03a6f877867c",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cedce5f-23c1-4c5f-8e03-02bfd191edb6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15b1ee14-5b42-43c3-ace3-be5085d970b9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dda2490-b865-4ba1-8560-64014d82ad14",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "979e238b-4d6a-47fa-99c1-e1245d9ef834",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ace84f-70a3-4ddb-aceb-ab2b5e4451f8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,330)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57b11c32-60c0-4a80-a8c7-a56a4a19ebc7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='flight-row-9df29348-0bce-442c-93ec-af02e5de55c6']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "842cf387-f17a-433f-985d-6abdd842f9c3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.selected-text",
+      "targets": [
+        ["css=.selected-text", "css:finder"],
+        ["xpath=//div[@id='flight-row-9df29348-0bce-442c-93ec-af02e5de55c6']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/p", "xpath:idRelative"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Select a fare below')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "861e1220-f334-4579-8a9f-ce87f69f8ec1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.selected-text",
+      "targets": [
+        ["css=.selected-text", "css:finder"],
+        ["xpath=//div[@id='flight-row-9df29348-0bce-442c-93ec-af02e5de55c6']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/p", "xpath:idRelative"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Select a fare below')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c840c5a-7927-440e-bde4-fadd41e48e6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#abcButtonElement142 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#abcButtonElement142 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement142']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//li[2]/ac-ui-avail-fare-tray-card-pres/div/div[3]/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81dbded6-39dc-41bb-b8e5-382dc96b5051",
+      "comment": "",
+      "command": "click",
+      "target": "css=#abcButtonElement148 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#abcButtonElement148 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement148']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8f0f5e7-db06-4df9-96dd-d3e2c6597612",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,494.0833435058594)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f23a3c56-aa50-4b4a-8f8f-19a3e0a3f115",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcRadioButtonElement163",
+      "targets": [
+        ["id=abcRadioButtonElement163", "id"],
+        ["css=#abcRadioButtonElement163", "css:finder"],
+        ["xpath=//input[@id='abcRadioButtonElement163']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[4]/ac-ui-trip-details-cont/ac-ui-trip-details-pres/section/ac-ui-cancellation-protection-with-decline-cont/ac-ui-cancellation-protection-with-decline-pres/div/div[2]/div[2]/abc-radio-group/div/div/div[3]/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e54de3f4-59e3-4090-abf6-cd0c9c7d25bf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=abcButtonElement152",
+      "targets": [
+        ["id=abcButtonElement152", "id"],
+        ["css=#abcButtonElement152", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement152']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[5]/div/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue as guest')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c73121f5-7d0a-4f33-b456-31a3174bd485",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcButtonElement152",
+      "targets": [
+        ["id=abcButtonElement152", "id"],
+        ["css=#abcButtonElement152", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement152']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[5]/div/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue as guest')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e276af4d-f82b-4220-aa1c-0d9b9406e971",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=abcButtonElement152",
+      "targets": [
+        ["id=abcButtonElement152", "id"],
+        ["css=#abcButtonElement152", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement152']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[5]/div/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Continue as guest ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fdc4ee1-fa64-423e-b8a4-76d75fb6559c",
+      "comment": "Test - passenger info",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-passengers/div/ac-ui-passenger-page-pres/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Who’s travelling?')]", "xpath:innerText"]
+      ],
+      "value": "Who’s travelling?"
+    }]
+  }, {
+    "id": "3eb3431d-e465-4ebf-95c4-52755f0eec0a",
+    "name": "7_TD-03_FlexibleDatesToggle",
+    "commands": [{
+      "id": "38116658-d48a-4c99-9849-8071032ed576",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "231a1281-0c9a-4aa4-bd8a-711d6b2b99d1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd7babbc-59b6-40ca-85dc-aec5efee05e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-formfield-1",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-formfield-1", "id"],
+        ["name=bkmg-desktop_travelDates-formfield-1", "name"],
+        ["css=#bkmg-desktop_travelDates-formfield-1", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates-formfield-1']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afd38b7e-0bb4-4146-8151-be2fb3be9366",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,136.5833282470703)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a9f54fc-aaaa-4629-ab89-ca3896c5c0be",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates-date-2026-04-25 > .date",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates-date-2026-04-25 > .date", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-25']/p", "xpath:idRelative"],
+        ["xpath=//abc-calendar-month[2]/table/tr[5]/td[7]/abc-calendar-day/ac-calendar-day/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "489a4f5c-b7e9-4d38-aa45-58f4438ca65a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates_1_confirmDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_confirmDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_confirmDates']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "404a9f24-4958-4c4a-bb05-0201f7f06561",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_clearDates']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Clear dates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ffe0a66-84b3-4114-bbdf-232c461e4dee",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates-date-2026-04-30",
+      "targets": [
+        ["id=bkmg-desktop_travelDates-date-2026-04-30", "id"],
+        ["css=#bkmg-desktop_travelDates-date-2026-04-30", "css:finder"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates-date-2026-04-30']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDates_content']/div/abc-calendar-month[2]/table/tr[6]/td[5]/abc-calendar-day/ac-calendar-day/div", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[5]/abc-calendar-day/ac-calendar-day/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fda33d1-75e2-4551-afef-347f52df0fda",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates_1_confirmDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_confirmDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_confirmDates']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1e5ee13-54fb-4846-a3c7-7f53d09b23aa",
+      "comment": "Test - date input spans exist on page",
+      "command": "assertElementPresent",
+      "target": "css=span.abc-date-picker-user-input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2832b07c-bb06-4e29-904d-f39e8a3ba0c5",
+      "comment": "Test - flexible dates toggle exist",
+      "command": "assertElementPresent",
+      "target": "css=.flexible-dates-toggle",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "333c3a02-ddac-473d-a523-c0cb92b0cfea",
+    "name": "15_BP-03_MissingRequiredField",
+    "commands": [{
+      "id": "3265120c-5296-44a8-a7ce-ba346ed10564",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c7f9433-062d-4440-855d-827c79b22287",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1775x961",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71a74c78-63d3-4c60-bf7e-0ebe73509110",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c3560d8-3f71-4895-b93b-c34db2cff6a1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2197d3c9-6304-4984-aaa6-4f33697d5f34",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_findButton > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_findButton > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ef191e5-5e5b-45db-8de6-150cf2553193",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,330)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42a9d931-c8c3-4eff-adb6-0ef47cdcb70c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='flight-row-9df29348-0bce-442c-93ec-af02e5de55c6']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a1d2db0-2447-4995-8b4d-6bd611eb73a3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.selected-text",
+      "targets": [
+        ["css=.selected-text", "css:finder"],
+        ["xpath=//div[@id='flight-row-9df29348-0bce-442c-93ec-af02e5de55c6']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/p", "xpath:idRelative"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Select a fare below')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0afd80d7-cf26-47db-b3f0-96bd59069811",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.selected-text",
+      "targets": [
+        ["css=.selected-text", "css:finder"],
+        ["xpath=//div[@id='flight-row-9df29348-0bce-442c-93ec-af02e5de55c6']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/p", "xpath:idRelative"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Select a fare below')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b50252e8-8eca-47d1-976c-bf98d7f76f93",
+      "comment": "",
+      "command": "click",
+      "target": "css=#abcButtonElement142 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#abcButtonElement142 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement142']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//li[2]/ac-ui-avail-fare-tray-card-pres/div/div[3]/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa685324-5e6e-4360-a50e-445d34f59ac2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#abcButtonElement148 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#abcButtonElement148 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement148']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ca27290-bc66-4f47-b40e-22802b8f4cf0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,494.0833435058594)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66325a59-49a2-4a9d-837d-5d89c3846f92",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcRadioButtonElement163",
+      "targets": [
+        ["id=abcRadioButtonElement163", "id"],
+        ["css=#abcRadioButtonElement163", "css:finder"],
+        ["xpath=//input[@id='abcRadioButtonElement163']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[4]/ac-ui-trip-details-cont/ac-ui-trip-details-pres/section/ac-ui-cancellation-protection-with-decline-cont/ac-ui-cancellation-protection-with-decline-pres/div/div[2]/div[2]/abc-radio-group/div/div/div[3]/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "899bd2ac-c103-4c48-82ae-20a300e346e5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=abcButtonElement152",
+      "targets": [
+        ["id=abcButtonElement152", "id"],
+        ["css=#abcButtonElement152", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement152']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[5]/div/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue as guest')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26a4972e-badd-45f1-8c07-359c202ad322",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcButtonElement152",
+      "targets": [
+        ["id=abcButtonElement152", "id"],
+        ["css=#abcButtonElement152", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement152']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[5]/div/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue as guest')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a34955-ba15-4bd0-a9dc-3782271656c1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=abcButtonElement152",
+      "targets": [
+        ["id=abcButtonElement152", "id"],
+        ["css=#abcButtonElement152", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement152']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[5]/div/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Continue as guest ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c56dfac-c4e5-405d-b380-a12ae9c0b734",
+      "comment": "",
+      "command": "click",
+      "target": "css=#abcButtonElement173 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#abcButtonElement173 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement173']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//abc-button[2]/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcdd2de3-d768-4240-a5a4-c43f86e4dd5d",
+      "comment": "Test - first name required",
+      "command": "assertElementPresent",
+      "target": "css=#\\_passengerInfoForm_firstName1ErrorText > .ng-star-inserted",
+      "targets": [
+        ["css=#\\_passengerInfoForm_firstName1ErrorText > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[@id='_passengerInfoForm_firstName1ErrorText']/div", "xpath:idRelative"],
+        ["xpath=//abc-subscript/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51fa9a7b-721c-4205-9549-3bca98ad1507",
+      "comment": "Test - last name required",
+      "command": "assertElementPresent",
+      "target": "css=#\\_passengerInfoForm_lastName1ErrorText > .ng-star-inserted",
+      "targets": [
+        ["css=#\\_passengerInfoForm_lastName1ErrorText > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[@id='_passengerInfoForm_lastName1ErrorText']/div", "xpath:idRelative"],
+        ["xpath=//abc-input[3]/abc-form-element-container/div/abc-subscript/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1281cadf-282c-4b3e-b86c-3998efc0115d",
+      "comment": "Test - gender required",
+      "command": "assertElementPresent",
+      "target": "css=#\\_passengerInfoForm_gender1ErrorText > .ng-star-inserted",
+      "targets": [
+        ["css=#\\_passengerInfoForm_gender1ErrorText > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[@id='_passengerInfoForm_gender1ErrorText']/div", "xpath:idRelative"],
+        ["xpath=//abc-combo-box/abc-form-element-container/div/abc-subscript/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2812030-6b73-449c-8212-e2fc5bdc4c41",
+      "comment": "Test - date of birth required",
+      "command": "assertElementPresent",
+      "target": "css=#ErrorText > .ng-star-inserted",
+      "targets": [
+        ["css=#ErrorText > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[@id='ErrorText']/div", "xpath:idRelative"],
+        ["xpath=//fieldset/abc-subscript/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d724a580-8ee5-4a15-a599-ec0dd78ef2d7",
+      "comment": "Test - email address required",
+      "command": "assertElementPresent",
+      "target": "css=#\\_contactInfo_emailErrorText > .ng-star-inserted",
+      "targets": [
+        ["css=#\\_contactInfo_emailErrorText > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[@id='_contactInfo_emailErrorText']/div", "xpath:idRelative"],
+        ["xpath=//fieldset/abc-input/abc-form-element-container/div/abc-subscript/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94022d88-3d99-41a4-9a6f-1c186122b573",
+      "comment": "Test - phone number required",
+      "command": "assertElementPresent",
+      "target": "css=.abc-phone-number-container",
+      "targets": [
+        ["css=.abc-phone-number-container", "css:finder"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-passengers/div/ac-ui-passenger-page-pres/div[4]/ac-ui-passenger-contact-info-card/div/div[2]/form/fieldset/div/div/abc-phone-number/div", "xpath:idRelative"],
+        ["xpath=//abc-phone-number/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "74364241-ea23-4420-aef1-9e57a3f4d200",
+    "name": "16-BP-04_InvalidEmailFormat",
+    "commands": [{
+      "id": "037ad4df-bce5-4cae-af53-1ca25020e4fb",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db9b3984-bee8-4254-8f3c-670c13120582",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "893x952",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bef100db-cb98-4f59-8908-14eae48e6cfe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eff6aa98-13bc-4ff7-87bf-dfb026361189",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_findButton",
+      "targets": [
+        ["id=bkmg-desktop_findButton", "id"],
+        ["css=#bkmg-desktop_findButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_findButton']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/main/div/ac-flights/div/div/div/div/ac-bkmg-desktop/div/ac-one-trip-desktop/form/div/div[3]/ac-button/button", "xpath:idRelative"],
+        ["xpath=//ac-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72684578-e5c5-4b79-9389-f209b1ebbeaf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cabin-fare-0-Y > .cabin-price > span:nth-child(2)",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .cabin-price > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='flight-row-025a2dbb-a5cf-4831-8774-da6d7a06431d']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/span/span[2]", "xpath:idRelative"],
+        ["xpath=//button/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fce67b1f-c45f-48ce-afe5-04f8403e47ac",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.cabin-fare-0-Y > .cabin-price > span:nth-child(2)",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .cabin-price > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='flight-row-025a2dbb-a5cf-4831-8774-da6d7a06431d']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/span/span[2]", "xpath:idRelative"],
+        ["xpath=//button/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c373d29-092a-4a42-8024-e596917f9290",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='flight-row-025a2dbb-a5cf-4831-8774-da6d7a06431d']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8579be45-31c0-4efe-8ca8-cd9824faebb4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .ng-star-inserted:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='flight-row-025a2dbb-a5cf-4831-8774-da6d7a06431d']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d248700b-17e0-4dd6-806b-f1d20d6ef175",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cabin-fare-0-Y > .cabin-price",
+      "targets": [
+        ["css=.cabin-fare-0-Y > .cabin-price", "css:finder"],
+        ["xpath=//div[@id='flight-row-025a2dbb-a5cf-4831-8774-da6d7a06431d']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/span", "xpath:idRelative"],
+        ["xpath=//ac-ui-avail-fare-grid-cell-pres/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1123244-d3ea-4021-95b2-89179a7afc8a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.selected-text",
+      "targets": [
+        ["css=.selected-text", "css:finder"],
+        ["xpath=//div[@id='flight-row-025a2dbb-a5cf-4831-8774-da6d7a06431d']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/p", "xpath:idRelative"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Select a fare below')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf8d86fa-1b40-4d43-9975-968eb9c36384",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.selected-text",
+      "targets": [
+        ["css=.selected-text", "css:finder"],
+        ["xpath=//div[@id='flight-row-025a2dbb-a5cf-4831-8774-da6d7a06431d']/div[2]/ac-ui-avail-fare-grid-cell-pres/div/button/p", "xpath:idRelative"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Select a fare below')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb1946b3-4ede-4930-bf1f-ffe0376182d1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,490.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26ded47a-7c1e-465f-8848-51764597e2cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#abcButtonElement142 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#abcButtonElement142 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement142']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//li[2]/ac-ui-avail-fare-tray-card-pres/div/div[3]/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5be6eb2-6cf6-4b88-90e2-96887494d6ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=#abcButtonElement148 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#abcButtonElement148 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement148']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4315f5a0-6279-4b83-9c77-b48ab7dba807",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#abcButtonElement148 .abc-ripple-wrapper",
+      "targets": [
+        ["css=#abcButtonElement148 .abc-ripple-wrapper", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement148']/abc-ripple/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/abc-button/button/abc-ripple/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "535e8fa7-e987-4584-9bdf-24b2ab8732c0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,366.9666748046875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95c90c38-ee4d-448a-ba43-dbbe1a8e807b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42a88de1-e415-4fc4-af10-7ee080ab600d",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcRadioButtonElement163",
+      "targets": [
+        ["id=abcRadioButtonElement163", "id"],
+        ["css=#abcRadioButtonElement163", "css:finder"],
+        ["xpath=//input[@id='abcRadioButtonElement163']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[4]/ac-ui-trip-details-cont/ac-ui-trip-details-pres/section/ac-ui-cancellation-protection-with-decline-cont/ac-ui-cancellation-protection-with-decline-pres/div/div[2]/div[2]/abc-radio-group/div/div/div[3]/abc-radio-button/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/abc-radio-button/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed15930-4559-49ae-b8d0-5176b79a74eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=abcButtonElement152",
+      "targets": [
+        ["id=abcButtonElement152", "id"],
+        ["css=#abcButtonElement152", "css:finder"],
+        ["xpath=//button[@id='abcButtonElement152']", "xpath:attributes"],
+        ["xpath=//main[@id='ac-page-main']/div/ac-ui-page-fare-review/div[5]/div/div/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue as guest')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5babaa0-ca69-4ad6-81ed-b9b94abc533f",
+      "comment": "",
+      "command": "type",
+      "target": "id=_contactInfo_email",
+      "targets": [],
+      "value": "dipukhan.com"
+    }, {
+      "id": "32716434-12fe-401e-90a7-736c0d4017f4",
+      "comment": "Test - email error occured",
+      "command": "assertElementPresent",
+      "target": "css=#\\_contactInfo_emailErrorText > .ng-star-inserted",
+      "targets": [
+        ["css=#\\_contactInfo_emailErrorText > .ng-star-inserted", "css:finder"],
+        ["xpath=//div[@id='_contactInfo_emailErrorText']/div", "xpath:idRelative"],
+        ["xpath=//abc-subscript/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78f89704-409a-4545-85e8-d46f04f92df3",
+      "comment": "Test - email error text",
+      "command": "assertText",
+      "target": "#_contactInfo_emailErrorText > div:nth-child(1)",
+      "targets": [],
+      "value": "Please enter a valid email address"
+    }]
+  }, {
+    "id": "5dd0083a-4409-414b-8fdf-a2e087ec94d7",
+    "name": "9_TD_05_ClearDates",
+    "commands": [{
+      "id": "60002732-66ba-48c5-9e37-780eed3b481f",
+      "comment": "",
+      "command": "open",
+      "target": "/home/ca/en/aco/flights",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2547b4e2-de78-4b88-b524-6797ddaae430",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "893x946",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f40b817c-2f95-4531-ab40-bb7162bd5cfe",
+      "comment": "",
+      "command": "click",
+      "target": "id=bkmg-desktop_travelDates",
+      "targets": [
+        ["id=bkmg-desktop_travelDates", "id"],
+        ["name=bkmg-desktop_travelDates", "name"],
+        ["css=#bkmg-desktop_travelDates", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "481da5ce-f1f6-4cb4-bf39-de176bc5c86d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=bkmg-desktop_travelDatesAbcCalendarDialogCloseButton",
+      "targets": [
+        ["id=bkmg-desktop_travelDatesAbcCalendarDialogCloseButton", "id"],
+        ["css=#bkmg-desktop_travelDatesAbcCalendarDialogCloseButton", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDatesAbcCalendarDialogCloseButton']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesAbcCalendarDialog']/div[3]/div/div/div[2]/abc-button/button", "xpath:idRelative"],
+        ["xpath=//div[2]/abc-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5693410-c395-4c57-9b80-87f70f1a1628",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_clearDates']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Clear dates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea0fd5cd-75f0-4f19-a341-c9596eb1d34c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_clearDates']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Clear dates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d40ca72e-7919-4c71-ae8b-db246c825c64",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text",
+      "targets": [
+        ["css=#bkmg-desktop_travelDates_1_clearDates > .ac-button-text", "css:finder"],
+        ["xpath=//button[@id='bkmg-desktop_travelDates_1_clearDates']/span", "xpath:idRelative"],
+        ["xpath=//ac-button/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Clear dates')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d00e83ec-e240-4581-846f-c7a14da37db8",
+      "comment": "Test - dates are cleared",
+      "command": "assertElementNotPresent",
+      "target": "xpath=(//span[@class='abc-date-picker-user-input ng-star-inserted'])[1]",
+      "targets": [
+        ["id=bkmg-desktop_travelDates", "id"],
+        ["name=bkmg-desktop_travelDates", "name"],
+        ["css=#bkmg-desktop_travelDates", "css:finder"],
+        ["xpath=//input[@id='bkmg-desktop_travelDates']", "xpath:attributes"],
+        ["xpath=//div[@id='bkmg-desktop_travelDatesWrapper']/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/abc-input/abc-form-element-container/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "13355bcc-e34b-4128-aa7c-4d6187c73a9c",
+    "name": "14_BP-02_AddAnotherPhoneNumber",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "bb15a708-2b01-4689-bddd-80285807b5bd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0e4df446-8d86-461a-8953-62bb6fc2d787"]
+  }],
+  "urls": ["https://www.aircanada.com/"],
+  "plugins": []
+}
