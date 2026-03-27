@@ -1,0 +1,408 @@
+{
+  "id": "cf5b2552-a55a-45c6-ab3e-f5266a80f685",
+  "version": "2.0",
+  "name": "Wikipedia",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "3e9e308d-8a51-40bd-825b-f5462ad91295",
+    "name": "Test-Search",
+    "commands": [{
+      "id": "3024958a-d002-41e8-9342-438a6d93ea6c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bd79847-1e57-4288-a13a-d4ac9fe375d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a3529ab-2676-4132-8eca-961869db8b48",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [],
+      "value": "covid-19"
+    }, {
+      "id": "87620f81-9300-446e-8109-f0927a0e8807",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchLanguage",
+      "targets": [
+        ["id=searchLanguage", "id"],
+        ["name=language", "name"],
+        ["css=#searchLanguage", "css:finder"],
+        ["xpath=//select[@id='searchLanguage']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "410b3684-6605-44e9-a4b8-f13d66840733",
+      "comment": "",
+      "command": "select",
+      "target": "id=searchLanguage",
+      "targets": [],
+      "value": "label=English"
+    }, {
+      "id": "7a756580-2f11-4680-ad17-67f5ee7d97da",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(17)",
+      "targets": [
+        ["css=option:nth-child(17)", "css:finder"],
+        ["xpath=//option[@value='en']", "xpath:attributes"],
+        ["xpath=//select[@id='searchLanguage']/option[17]", "xpath:idRelative"],
+        ["xpath=//option[17]", "xpath:position"],
+        ["xpath=//option[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c2effad-9f01-4981-97b7-c73b257fa190",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svg-search-icon",
+      "targets": [
+        ["css=.svg-search-icon", "css:finder"],
+        ["xpath=//form[@id='search-form']/fieldset/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca1d68d3-21c7-43a2-8cce-d9854c270d70",
+      "comment": "article is visible",
+      "command": "assertElementPresent",
+      "target": "id=bodyContent",
+      "targets": [
+        ["id=bodyContent", "id"],
+        ["css=#bodyContent", "css:finder"],
+        ["xpath=//div[@id='bodyContent']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/div[3]", "xpath:idRelative"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6716379-118a-426b-b519-b3183e68bb09",
+      "comment": "heading is correct",
+      "command": "assertText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/header/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'View source for COVID-19')]", "xpath:innerText"]
+      ],
+      "value": "COVID-19"
+    }]
+  }, {
+    "id": "aee18a87-ec24-4049-bf19-01ebbff43431",
+    "name": "Test-Navigation",
+    "commands": [{
+      "id": "1b17d44f-fbb1-4386-97e1-4757c1a6fc49",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Main_Page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2103f7e6-f20f-41b7-9a0d-e47729fa6c0b",
+      "comment": "home page is visible",
+      "command": "assertElementPresent",
+      "target": "id=bodyContent",
+      "targets": [
+        ["id=bodyContent", "id"],
+        ["css=#bodyContent", "css:finder"],
+        ["xpath=//div[@id='bodyContent']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/div[3]", "xpath:idRelative"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8557b25-ea59-4e6f-9dd2-932ee6684980",
+      "comment": "home page heading ",
+      "command": "assertText",
+      "target": "id=mp-tfa-h2",
+      "targets": [],
+      "value": "From today's featured article"
+    }, {
+      "id": "8e14c5c8-3e98-48db-90ac-da0b74e58b12",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ca-viewsource span",
+      "targets": [
+        ["css=#ca-viewsource span", "css:finder"],
+        ["xpath=//li[@id='ca-viewsource']/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/nav/div/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'View source')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b225a44-b627-4e55-ad2e-dc4ae66d7418",
+      "comment": "source is visible",
+      "command": "assertElementPresent",
+      "target": "id=bodyContent",
+      "targets": [
+        ["id=bodyContent", "id"],
+        ["css=#bodyContent", "css:finder"],
+        ["xpath=//div[@id='bodyContent']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/div[3]", "xpath:idRelative"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "002dd17d-e0f1-4f9d-99bc-1e3fab35c5e4",
+      "comment": "heading is correct",
+      "command": "assertText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/header/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'View source for Main Page')]", "xpath:innerText"]
+      ],
+      "value": "View source for Main Page"
+    }, {
+      "id": "a7862f16-29e4-43c4-8878-873bb3d8e5eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View history",
+      "targets": [
+        ["linkText=View history", "linkText"],
+        ["css=#ca-history > a", "css:finder"],
+        ["xpath=//li[@id='ca-history']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/w/index.php?title=Main_Page&action=history')]", "xpath:href"],
+        ["xpath=//nav/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View history')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8691067-7256-4b89-93f2-1314a7e3de3c",
+      "comment": "hsitory is visible",
+      "command": "assertElementPresent",
+      "target": "id=bodyContent",
+      "targets": [
+        ["id=bodyContent", "id"],
+        ["css=#bodyContent", "css:finder"],
+        ["xpath=//div[@id='bodyContent']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/div[3]", "xpath:idRelative"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91131844-41bd-4595-8248-a74435ce76e8",
+      "comment": "heading is correct",
+      "command": "assertText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/header/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'View source for Main Page')]", "xpath:innerText"]
+      ],
+      "value": "Main Page: Revision history"
+    }]
+  }, {
+    "id": "90915d3c-8f53-43e5-9c5c-6173a861d490",
+    "name": "Test-Document-Tabs",
+    "commands": [{
+      "id": "bae5562c-2be3-467b-941c-0b0f34dcbe49",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9700a419-3c8c-46c2-a950-b4f6a05fd1cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bef29746-190b-4f3f-b466-fc750878a7f9",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [],
+      "value": "covid-19"
+    }, {
+      "id": "57b4abd7-462c-4af6-81fa-a74063353e0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchLanguage",
+      "targets": [
+        ["id=searchLanguage", "id"],
+        ["name=language", "name"],
+        ["css=#searchLanguage", "css:finder"],
+        ["xpath=//select[@id='searchLanguage']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d6cb85c-ad97-4af8-9dd2-efe1899a770d",
+      "comment": "",
+      "command": "select",
+      "target": "id=searchLanguage",
+      "targets": [],
+      "value": "label=English"
+    }, {
+      "id": "014bad97-9072-497e-bb53-8ba7ac48cc07",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(17)",
+      "targets": [
+        ["css=option:nth-child(17)", "css:finder"],
+        ["xpath=//option[@value='en']", "xpath:attributes"],
+        ["xpath=//select[@id='searchLanguage']/option[17]", "xpath:idRelative"],
+        ["xpath=//option[17]", "xpath:position"],
+        ["xpath=//option[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31f288e2-7dd4-4e83-ac3f-7c20360184ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svg-search-icon",
+      "targets": [
+        ["css=.svg-search-icon", "css:finder"],
+        ["xpath=//form[@id='search-form']/fieldset/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d68edd96-b853-4f3e-b050-1d83985d0bfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#toc-External_links > .vector-toc-link span:nth-child(2)",
+      "targets": [
+        ["css=#toc-External_links > .vector-toc-link span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='toc-External_links']/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[18]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'External links')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeabdf03-c99c-45ed-b384-6ed798e0382a",
+      "comment": "tab is visible",
+      "command": "assertElementPresent",
+      "target": "id=Health_agencies",
+      "targets": [
+        ["id=Health_agencies", "id"],
+        ["css=#Health_agencies", "css:finder"],
+        ["xpath=//h3[@id='Health_agencies']", "xpath:attributes"],
+        ["xpath=//div[@id='mw-content-text']/div[2]/div[100]/h3", "xpath:idRelative"],
+        ["xpath=//div[100]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Health agencies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1225e2c0-bc1f-4d21-bd2b-696e1f980902",
+      "comment": "heading is correct",
+      "command": "assertText",
+      "target": "id=External_links",
+      "targets": [
+        ["id=External_links", "id"],
+        ["css=#External_links", "css:finder"],
+        ["xpath=//h2[@id='External_links']", "xpath:attributes"],
+        ["xpath=//div[@id='mw-content-text']/div[2]/div[98]/h2", "xpath:idRelative"],
+        ["xpath=//div[98]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'External links')]", "xpath:innerText"]
+      ],
+      "value": "External links"
+    }]
+  }, {
+    "id": "2da2a508-bf51-492e-a39f-4b99cb4ac907",
+    "name": "Test-Current-Article",
+    "commands": [{
+      "id": "3c9b28f8-2277-43fe-b004-efec3c90e05c",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Main_Page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99347b11-ff00-4ca0-8757-e3c5d5f9f8f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=vector-main-menu-dropdown-checkbox",
+      "targets": [
+        ["id=vector-main-menu-dropdown-checkbox", "id"],
+        ["css=#vector-main-menu-dropdown-checkbox", "css:finder"],
+        ["xpath=//input[@id='vector-main-menu-dropdown-checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='vector-main-menu-dropdown']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e085ec08-5361-4191-96ee-361a13dc5c7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#n-currentevents span",
+      "targets": [
+        ["css=#n-currentevents span", "css:finder"],
+        ["xpath=//li[@id='n-currentevents']/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Current events')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cfb21c1-08c6-4285-9579-2dc463b614cd",
+      "comment": "tab is visible",
+      "command": "assertElementPresent",
+      "target": "id=bodyContent",
+      "targets": [
+        ["id=bodyContent", "id"],
+        ["css=#bodyContent", "css:finder"],
+        ["xpath=//div[@id='bodyContent']", "xpath:attributes"],
+        ["xpath=//main[@id='content']/div[3]", "xpath:idRelative"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b77c881d-c12c-46e7-bfd8-db1043e0ae26",
+      "comment": "heading is correct",
+      "command": "assertText",
+      "target": "css=#firstHeading > .mw-page-title-main",
+      "targets": [
+        ["css=#firstHeading > .mw-page-title-main", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": "Current events"
+    }, {
+      "id": "10e28221-e924-4723-8d36-93777d814fb0",
+      "comment": "Calander present",
+      "command": "assertElementPresent",
+      "target": "css=.p-current-events-calside",
+      "targets": [
+        ["css=.p-current-events-calside", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div[2]/div/div[7]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e42898cf-009f-43af-bec6-1ae780e3d536",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}
